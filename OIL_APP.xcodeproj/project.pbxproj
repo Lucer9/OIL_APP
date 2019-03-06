@@ -7,27 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A2A9581223074EE00A5D1CB /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2A9580223074EE00A5D1CB /* Extension.swift */; };
+		3A2A95832230754600A5D1CB /* EquipoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2A95822230754600A5D1CB /* EquipoCell.swift */; };
 		3A49AC262224936C00302E54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49AC252224936C00302E54 /* AppDelegate.swift */; };
 		3A49AC282224936C00302E54 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49AC272224936C00302E54 /* FirstViewController.swift */; };
-		3A49AC2A2224936C00302E54 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49AC292224936C00302E54 /* SecondViewController.swift */; };
 		3A49AC2D2224936C00302E54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A49AC2B2224936C00302E54 /* Main.storyboard */; };
 		3A49AC2F2224936E00302E54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A49AC2E2224936E00302E54 /* Assets.xcassets */; };
 		3A49AC322224936E00302E54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A49AC302224936E00302E54 /* LaunchScreen.storyboard */; };
 		3A49AC3C2224969300302E54 /* orangeRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49AC3B2224969300302E54 /* orangeRoundedButton.swift */; };
 		3A63710A222DFA500075F343 /* KeyboardUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A637109222DFA500075F343 /* KeyboardUIViewController.swift */; };
+		3ABDD38022306A8F00B9263D /* Equipos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABDD37F22306A8F00B9263D /* Equipos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A2A9580223074EE00A5D1CB /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		3A2A95822230754600A5D1CB /* EquipoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipoCell.swift; sourceTree = "<group>"; };
 		3A49AC222224936C00302E54 /* OIL_APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OIL_APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A49AC252224936C00302E54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A49AC272224936C00302E54 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		3A49AC292224936C00302E54 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		3A49AC2C2224936C00302E54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A49AC2E2224936E00302E54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A49AC312224936E00302E54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A49AC332224936E00302E54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A49AC3B2224969300302E54 /* orangeRoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = orangeRoundedButton.swift; sourceTree = "<group>"; };
 		3A637109222DFA500075F343 /* KeyboardUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardUIViewController.swift; sourceTree = "<group>"; };
+		3ABDD37F22306A8F00B9263D /* Equipos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equipos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +68,10 @@
 			children = (
 				3A49AC252224936C00302E54 /* AppDelegate.swift */,
 				3A49AC272224936C00302E54 /* FirstViewController.swift */,
-				3A49AC292224936C00302E54 /* SecondViewController.swift */,
 				3A49AC2B2224936C00302E54 /* Main.storyboard */,
+				3A2A9580223074EE00A5D1CB /* Extension.swift */,
+				3A2A95822230754600A5D1CB /* EquipoCell.swift */,
+				3ABDD37F22306A8F00B9263D /* Equipos.swift */,
 				3A49AC2E2224936E00302E54 /* Assets.xcassets */,
 				3A49AC302224936E00302E54 /* LaunchScreen.storyboard */,
 				3A49AC332224936E00302E54 /* Info.plist */,
@@ -145,9 +151,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A63710A222DFA500075F343 /* KeyboardUIViewController.swift in Sources */,
-				3A49AC2A2224936C00302E54 /* SecondViewController.swift in Sources */,
+				3ABDD38022306A8F00B9263D /* Equipos.swift in Sources */,
 				3A49AC3C2224969300302E54 /* orangeRoundedButton.swift in Sources */,
+				3A2A9581223074EE00A5D1CB /* Extension.swift in Sources */,
 				3A49AC262224936C00302E54 /* AppDelegate.swift in Sources */,
+				3A2A95832230754600A5D1CB /* EquipoCell.swift in Sources */,
 				3A49AC282224936C00302E54 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
