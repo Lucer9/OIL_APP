@@ -1,0 +1,22 @@
+[
+    {
+        "color": "FDE2E7",
+        "titulo": "Configurar servidor",
+        "fecha": 1551998113,
+        "equipo": "1",
+        "descripcion": "Configurar el servidor con los siguientes atributos:",
+        "importancia": 8,
+        "asignadoA": "a01336430",
+        "numComentarios": 0
+    },
+    {
+        "color": "FFF2E8",
+        "titulo": "Realizar mockups del sitio",
+        "fecha": 1552008113,
+        "equipo": "1",
+        "descripcion": "Se tienen que realizar los mockups del sitio web, de acuerdo a los wireframes provistos en el archivo adjunto",
+        "importancia": 8,
+        "asignadoA": "l01556728",
+        "numComentarios": 2
+    }
+]
