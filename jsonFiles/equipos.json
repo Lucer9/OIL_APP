@@ -1,0 +1,27 @@
+[
+    {
+        "idEquipo": "1",
+        "imagen": "https://cdn3.iconfinder.com/data/icons/picons-social/57/56-apple-512.png",
+        "nombreEquipo": "Apple",
+        "numTareasPendientes": 13,
+        "liderId": "l01556728",
+        "integrantes": [
+            "l01556728",
+            "a01336430",
+            "a01336319",
+            "a01337343"
+        ]
+    },
+    {
+        "idEquipo": "2",
+        "imagen": "https://banner2.kisspng.com/20180328/ete/kisspng-philadelphia-eagles-logo-eagle-5abc2087bac578.670575891522278535765.jpg",
+        "nombreEquipo": "Philadelfia Eagles",
+        "numTareasPendientes": 2,
+        "liderId": "3",
+        "integrantes": [
+            "l01556728",
+            "a01336319",
+            "a01678524"
+        ]
+    }
+]
