@@ -1,0 +1,49 @@
+[
+    {
+        "id": "l01556728",
+        "nombreIntegrante": "Rogelio Bustamante",
+        "correoIntegrante": "rbustamante@gmail.com",
+        "imagen": "",
+        "equipos": [
+            "1",
+            "2"
+        ]
+    },
+    {
+        "id": "a01336430",
+        "nombreIntegrante": "Miguel Gallardo",
+        "correoIntegrante": "miguel@gmail.com",
+        "imagen": "",
+        "equipos": [
+            "1"
+        ]
+    },
+    {
+        "id": "a01336319",
+        "nombreIntegrante": "Carlos Aguirre",
+        "correoIntegrante": "carlos@gmail.com",
+        "imagen": "",
+        "equipos": [
+            "1",
+            "2"
+        ]
+    },
+    {
+        "id": "a01337343",
+        "nombreIntegrante": "Alejandro Muñoz",
+        "correoIntegrante": "loko@gmail.com",
+        "imagen": "",
+        "equipos": [
+            "1"
+        ]
+    },
+    {
+        "id": "a01678524",
+        "nombreIntegrante": "Anonimo Pearson",
+        "correoIntegrante": "anonimo@gmail.com",
+        "imagen": "",
+        "equipos": [
+            "2"
+        ]
+    }
+]
