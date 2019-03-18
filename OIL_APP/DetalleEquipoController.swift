@@ -9,16 +9,13 @@
 import UIKit
 
 class DetalleEquipoController: UIViewController {
-    var equipo = [String:Any]()
-    @IBOutlet weak var nombreEquipo: UILabel!
+   
+    @IBOutlet var nombreEquipo: UILabel!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        nombreEquipo.text = equipo["nombreEquipo"] as? String
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
+
     
 }

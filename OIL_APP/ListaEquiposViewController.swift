@@ -8,14 +8,14 @@
 
 import UIKit
 
-extension listaEquiposViewController: UISearchResultsUpdating {
+extension ListaEquiposViewController: UISearchResultsUpdating {
     // MARK: - UISearchResultsUpdating Delegate
     func updateSearchResults(for searchController: UISearchController) {
         filterContentForSearchText(searchController.searchBar.text!)
     }
 }
 
-class listaEquiposViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ListaEquiposViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var listaEquipos: UITableView!
     
@@ -46,8 +46,6 @@ class listaEquiposViewController: UIViewController, UITableViewDelegate, UITable
     
     func isFiltering() -> Bool {
         return searchController.isActive && !searchBarIsEmpty()
-            cell.mainButton.titleLabel?.text=cell.mainLabel.text
-            cell.mainButton.addTarget(self, action: #selector(self.pressButton(_:)), for: .touchUpInside) //<- use `#selector(...)`
     }
     
     func searchBarIsEmpty() -> Bool {
@@ -98,6 +96,11 @@ class listaEquiposViewController: UIViewController, UITableViewDelegate, UITable
         cell.mainImageView.clipsToBounds = true
         cell.mainLabel.text = (cellData["nombreEquipo"] as! String)
         
+        cell.mainButton.titleLabel?.text = (cellData["nombreEquipo"] as! String)
+        cell.mainButton.addTarget(self, action: #selector(self.pressMainButton(_:)), for: .touchUpInside) //<- use `#selector(...)`
+        cell.secondaryButton.titleLabel?.text = (cellData["nombreEquipo"] as! String)
+        cell.secondaryButton.addTarget(self, action: #selector(self.pressSecButton(_:)), for: .touchUpInside) //<- use `#selector(...)`
+        
         let cellNumTareasPendientes = (cellData["numTareasPendientes"] as! Int)
         let cellNumTareasPendientesText = "\(cellNumTareasPendientes) tareas"
         cell.lowerLabel.text = 	cellNumTareasPendientesText
@@ -107,7 +110,7 @@ class listaEquiposViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 120
+        return 90
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -122,12 +125,12 @@ class listaEquiposViewController: UIViewController, UITableViewDelegate, UITable
             equipo = datosArray![indexPath.row] as! [String: Any]
         }
         
-        siguienteVista.equipo = equipo
+        //siguienteVista.equipo = equipo
         self.navigationController?.pushViewController(siguienteVista, animated: true)
         
     }
     
-    @objc func pressButton(_ sender: UIButton){ //<- needs `@objc`
+    @objc func pressSecButton(_ sender: UIButton){ //<- needs `@objc`
         sender.backgroundColor = UIColor.lightGray
         print(sender.titleLabel!.text)
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
@@ -135,7 +138,17 @@ class listaEquiposViewController: UIViewController, UITableViewDelegate, UITable
         
        self.present(newViewController, animated: true, completion: nil)
         newViewController.nombreEquipo.text = sender.titleLabel!.text!
-
+    }
+    
+    @objc func pressMainButton(_ sender: UIButton){ //<- needs `@objc`
+        sender.backgroundColor = UIColor.lightGray
+        print(sender.titleLabel!.text)
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "DetalleEquipo") as! DetalleEquipoController
+        
+        self.present(newViewController, animated: true, completion: nil)
+        newViewController.nombreEquipo.text = sender.titleLabel!.text!
+        
         
     }
     

@@ -10,10 +10,11 @@ import UIKit
 
 class TableViewCell2: UITableViewCell {
     
-    
+    var id : Int = 0
     @IBOutlet var mainImageView: UIImageView!
     @IBOutlet var mainLabel: UILabel!
     @IBOutlet var lowerLabel: UILabel!
+    @IBOutlet var secondaryButton: UIButton!
     @IBOutlet var mainButton: UIButton!
-
+    
 }
