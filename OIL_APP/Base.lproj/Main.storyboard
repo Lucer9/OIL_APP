@@ -152,7 +152,7 @@
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Slr-Wa-Ukt" customClass="orangeRoundedButton" customModule="OIL_APP" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Slr-Wa-Ukt" customClass="OrangeRoundedButton" customModule="OIL_APP" customModuleProvider="target">
                                                 <rect key="frame" x="48" y="499" width="279" height="48"/>
                                                 <color key="backgroundColor" red="0.92122232910000001" green="0.433392942" blue="0.17631673810000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
@@ -262,7 +262,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fk-fN-Oe2" customClass="orangeRoundedButton" customModule="OIL_APP" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fk-fN-Oe2" customClass="OrangeRoundedButton" customModule="OIL_APP" customModuleProvider="target">
                                 <rect key="frame" x="48" y="519" width="279" height="48"/>
                                 <color key="backgroundColor" red="0.92122232913970947" green="0.43339294195175171" blue="0.17631673812866211" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -583,7 +583,7 @@
         <!--Lista Equipos View Controller-->
         <scene sceneID="SHD-zt-fWa">
             <objects>
-                <viewController id="QAd-HX-5cw" customClass="listaEquiposViewController" customModule="OIL_APP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QAd-HX-5cw" customClass="ListaEquiposViewController" customModule="OIL_APP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ssE-Jx-biH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -702,6 +702,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="eYh-xS-HMD"/>
         <segue reference="TT7-gz-qTB"/>
-        <segue reference="bFU-kJ-FQ3"/>
+        <segue reference="zDt-Pd-9jO"/>
     </inferredMetricsTieBreakers>
 </document>
