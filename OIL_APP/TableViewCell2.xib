@@ -22,6 +22,12 @@
                         <rect key="frame" x="23" y="24" width="70" height="70"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZfI-IW-inL" userLabel="ReunionB">
+                        <rect key="frame" x="270" y="0.0" width="100" height="119.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="W6G-3p-f1g"/>
+                        </constraints>
+                    </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tT-2D-mg7">
                         <rect key="frame" x="301" y="66" width="43" height="26"/>
                         <constraints>
@@ -32,6 +38,9 @@
                     </button>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bookings" translatesAutoresizingMaskIntoConstraints="NO" id="BTV-VZ-4TG">
                         <rect key="frame" x="311" y="41" width="21" height="21"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" button="YES" image="YES"/>
+                        </accessibility>
                         <constraints>
                             <constraint firstAttribute="width" constant="21" id="Sqk-f4-ZfA"/>
                         </constraints>
@@ -51,9 +60,12 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="BTV-VZ-4TG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="30" id="1NH-29-zdH"/>
+                    <constraint firstAttribute="trailing" secondItem="ZfI-IW-inL" secondAttribute="trailing" id="64s-B8-AVF"/>
                     <constraint firstAttribute="bottomMargin" secondItem="5Nc-qB-uxv" secondAttribute="bottom" constant="31" id="6xk-VS-Vk4"/>
+                    <constraint firstAttribute="bottom" secondItem="ZfI-IW-inL" secondAttribute="bottom" id="9UY-YT-JdH"/>
                     <constraint firstItem="LIe-u0-A0i" firstAttribute="leading" secondItem="5Nc-qB-uxv" secondAttribute="leading" id="FHc-fE-tVU"/>
                     <constraint firstItem="5Nc-qB-uxv" firstAttribute="top" secondItem="LIe-u0-A0i" secondAttribute="bottom" id="dCD-bo-wqY"/>
+                    <constraint firstItem="ZfI-IW-inL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="dKR-vh-V82"/>
                     <constraint firstAttribute="trailingMargin" secondItem="0tT-2D-mg7" secondAttribute="trailing" constant="10" id="i6A-V2-v2z"/>
                     <constraint firstAttribute="trailingMargin" secondItem="BTV-VZ-4TG" secondAttribute="trailing" constant="22" id="iZH-Pv-LKB"/>
                     <constraint firstItem="0tT-2D-mg7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="55" id="mNs-2b-kGR"/>
@@ -66,6 +78,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="lowerLabel" destination="5Nc-qB-uxv" id="ErE-JT-6t5"/>
+                <outlet property="mainButton" destination="ZfI-IW-inL" id="zur-Fe-Zuu"/>
                 <outlet property="mainImageView" destination="Tjl-8S-I52" id="a25-Gx-E59"/>
                 <outlet property="mainLabel" destination="LIe-u0-A0i" id="1uY-3Z-J3W"/>
             </connections>
