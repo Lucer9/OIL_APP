@@ -73,6 +73,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="Bookings" width="20" height="20.5"/>
+        <image name="Bookings" width="20" height="20"/>
     </resources>
 </document>
