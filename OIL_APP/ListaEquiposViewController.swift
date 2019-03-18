@@ -8,75 +8,123 @@
 
 import UIKit
 
-class ListaEquiposViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-   
-    @IBOutlet var listaEquipos: UITableView!
-    var arrayOfCellData = [cellData]()
+extension listaEquiposViewController: UISearchResultsUpdating {
+    // MARK: - UISearchResultsUpdating Delegate
+    func updateSearchResults(for searchController: UISearchController) {
+        filterContentForSearchText(searchController.searchBar.text!)
+    }
+}
+
+class listaEquiposViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arrayOfCellData.count
+    @IBOutlet var listaEquipos: UITableView!
+    
+    let urlString="https://raw.githubusercontent.com/Lucer9/OIL_APP/master/jsonFiles/equipos.json"
+    
+    var datosArray:[Any]?
+    var datosFiltrados = [Any]()
+    let searchController: UISearchController = UISearchController(searchResultsController: nil)
+    
+    override func viewDidLoad() {
+        
+        super.viewDidLoad()
+        let url = URL(string: urlString)
+        let datos = try? Data(contentsOf: url!)
+        datosArray = try! JSONSerialization.jsonObject(with: datos!) as? [Any]
+        
+        listaEquipos.separatorStyle = UITableViewCell.SeparatorStyle.none
+        
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Buscar equipos"
+        self.searchController.searchBar.setValue("Cancelar", forKey: "cancelButtonText")
+        self.searchController.searchBar.barTintColor = .white
+        navigationItem.searchController = searchController
+        definesPresentationContext = true
+        listaEquipos.tableHeaderView = searchController.searchBar
     }
     
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if arrayOfCellData[indexPath.row].tipoCelda == "gris"{
-            
-            
-            let cell = Bundle.main.loadNibNamed("TableViewCell2", owner: self, options: nil)?.first as! TableViewCell2
-            cell.mainImageView.image = arrayOfCellData[indexPath.row].imagenEquipo
-            cell.mainImageView.layer.cornerRadius = cell.mainImageView.frame.size.width/2
-            cell.mainImageView.clipsToBounds = true
-            cell.mainLabel.text = arrayOfCellData[indexPath.row].nombreEquipo
-            cell.lowerLabel.text = arrayOfCellData[indexPath.row].numTareas
+    func isFiltering() -> Bool {
+        return searchController.isActive && !searchBarIsEmpty()
             cell.mainButton.titleLabel?.text=cell.mainLabel.text
             cell.mainButton.addTarget(self, action: #selector(self.pressButton(_:)), for: .touchUpInside) //<- use `#selector(...)`
-
-            return cell
-        }else{
-            let cell = Bundle.main.loadNibNamed("TableViewCell2", owner: self, options: nil)?.first as! TableViewCell2
-            cell.mainImageView.image = arrayOfCellData[indexPath.row].imagenEquipo
-            cell.mainLabel.text = arrayOfCellData[indexPath.row].nombreEquipo
-            cell.lowerLabel.text = arrayOfCellData[indexPath.row].numTareas
-            
-            return cell
-            
+    }
+    
+    func searchBarIsEmpty() -> Bool {
+        return searchController.searchBar.text?.isEmpty ?? true
+    }
+    
+    func filterContentForSearchText(_ searchText: String, scope: String = "All") {
+        datosFiltrados = datosArray!.filter{
+            let equipo=$0 as! [String:Any]
+            let s:String = equipo["nombreEquipo"] as! String;
+            return(s.lowercased().contains(searchController.searchBar.text!.lowercased())) }
+        
+        listaEquipos.reloadData()
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if isFiltering() {
+            return datosFiltrados.count
         }
+        return (datosArray?.count)!
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = Bundle.main.loadNibNamed("TableViewCell2", owner: self, options: nil)?.first as! TableViewCell2
+        
+        let cellData: [String: Any]
+        
+        if isFiltering() {
+            cellData = datosFiltrados[indexPath.row] as! [String: Any]
+        } else {
+            cellData = datosArray?[indexPath.row] as! [String: Any]
+        }
+        
+        
+        let cellImageURLString = cellData["imagen"] as! String
+        let cellImageURL = URL(string: cellImageURLString)
+        var cellImage: UIImage
+        if let imageData = try? Data(contentsOf: cellImageURL!)
+        {
+            cellImage = UIImage(data: imageData)!
+        }else{
+            cellImage = #imageLiteral(resourceName: "Screen Shot 2019-03-13 at 12.37.03 PM")
+        }
+        
+        cell.mainImageView.image = cellImage
+        cell.mainImageView.layer.cornerRadius = cell.mainImageView.frame.size.width/2
+        cell.mainImageView.clipsToBounds = true
+        cell.mainLabel.text = (cellData["nombreEquipo"] as! String)
+        
+        let cellNumTareasPendientes = (cellData["numTareasPendientes"] as! Int)
+        let cellNumTareasPendientesText = "\(cellNumTareasPendientes) tareas"
+        cell.lowerLabel.text = 	cellNumTareasPendientesText
+        
+        return cell
+        
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if arrayOfCellData[indexPath.row].tipoCelda == "gris"{
-            //Table view cell 2 row height
-            return 90
-        }
-        else{
-            return 200
-        }
+        return 120
     }
     
-    override func viewDidLoad() {
-        listaEquipos.separatorStyle = UITableViewCell.SeparatorStyle.none
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        var equipo = [String:Any]()
+        //Paso 15: crear un identificador para el controlador de vista a nivel detalle
+        let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "DetalleEquipo") as! DetalleEquipoController
         
-        let url = URL(string:"https://cdn.pixabay.com/photo/2017/05/09/21/49/gecko-2299365__480.jpg")
-        
-        if let data = try? Data(contentsOf: url!)
-        {
-            let image: UIImage = UIImage(data: data)!
-            arrayOfCellData.append(cellData(tipoCelda:"gris",nombreEquipo:"Pumas",numTareas:"0 Tareas",imagenEquipo: image))
+        //Verificar si la vista actual es la de búsqueda
+        if (isFiltering()){
+            equipo = datosFiltrados[indexPath.row] as! [String: Any]
+        }else{
+            equipo = datosArray![indexPath.row] as! [String: Any]
         }
         
-        arrayOfCellData.append(cellData(tipoCelda:"gris",nombreEquipo:"Pumas",numTareas:"0 Tareas",imagenEquipo: #imageLiteral(resourceName: "Screen Shot 2019-03-13 at 12.37.03 PM")))
+        siguienteVista.equipo = equipo
+        self.navigationController?.pushViewController(siguienteVista, animated: true)
         
-        arrayOfCellData.append(cellData(tipoCelda:"gris",nombreEquipo:"Pumas",numTareas:"0 Tareas",imagenEquipo: #imageLiteral(resourceName: "Screen Shot 2019-03-13 at 12.37.03 PM")))
-        
-        arrayOfCellData.append(cellData(tipoCelda:"gris",nombreEquipo:"Pumas",numTareas:"0 Tareas",imagenEquipo: #imageLiteral(resourceName: "Screen Shot 2019-03-13 at 12.37.03 PM")))
-        
-        arrayOfCellData.append(cellData(tipoCelda:"gris",nombreEquipo:"Pumas",numTareas:"0 Tareas",imagenEquipo: #imageLiteral(resourceName: "Screen Shot 2019-03-13 at 12.37.03 PM")))
-        
-           arrayOfCellData.append(cellData(tipoCelda:"gris",nombreEquipo:"Pumas",numTareas:"0 Tareas",imagenEquipo: #imageLiteral(resourceName: "Screen Shot 2019-03-13 at 12.37.03 PM")))
-        /*
-         arrayOfCellData = [cellData(cell: 2, text: "Miguel AKA el de la MAC", image: #imageLiteral(resourceName: "Screen Shot 2019-03-13 at 12.37.03 PM")),
-         cellData(cell: 2, text: "Chorlie está enojado con MAC", image: #imageLiteral(resourceName: "Screen Shot 2019-03-13 at 12.37.03 PM")),
-         cellData(cell: 2, text: "Yo sin MAC unu", image: #imageLiteral(resourceName: "Screen Shot 2019-03-13 at 12.37.03 PM"))]*/
     }
     
     @objc func pressButton(_ sender: UIButton){ //<- needs `@objc`

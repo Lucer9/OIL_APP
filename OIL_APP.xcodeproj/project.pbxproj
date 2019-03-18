@@ -18,6 +18,7 @@
 		3ABB27A3223B022F0001272C /* TableViewCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ABB27A1223B022F0001272C /* TableViewCell2.xib */; };
 		3AC2954D223F1A0000181F57 /* AgendarReunionUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC2954C223F1A0000181F57 /* AgendarReunionUIViewController.swift */; };
 		3ACB91ED223ECC6C00E913A3 /* SpecialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACB91EC223ECC6C00E913A3 /* SpecialViewController.swift */; };
+		493A3499223F653900E4EFF5 /* DetalleEquipoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493A3498223F653900E4EFF5 /* DetalleEquipoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		3ABB27A1223B022F0001272C /* TableViewCell2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell2.xib; sourceTree = "<group>"; };
 		3AC2954C223F1A0000181F57 /* AgendarReunionUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendarReunionUIViewController.swift; sourceTree = "<group>"; };
 		3ACB91EC223ECC6C00E913A3 /* SpecialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecialViewController.swift; sourceTree = "<group>"; };
+		493A3498223F653900E4EFF5 /* DetalleEquipoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleEquipoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				3A49AC332224936E00302E54 /* Info.plist */,
 				3ACB91EC223ECC6C00E913A3 /* SpecialViewController.swift */,
 				3A529853223F719D0076CF0A /* Assets.xcassets */,
+				493A3498223F653900E4EFF5 /* DetalleEquipoController.swift */,
 			);
 			path = OIL_APP;
 			sourceTree = "<group>";
@@ -159,6 +162,9 @@
 				3A9FE6EA223B7ECA00BE0965 /* ListaEquiposViewController.swift in Sources */,
 				3A529856223F77D40076CF0A /* ListaMaterialTableViewController.swift in Sources */,
 				3A49AC3C2224969300302E54 /* OrangeRoundedButton.swift in Sources */,
+				3A9FE6EA223B7ECA00BE0965 /* listaEquiposViewController.swift in Sources */,
+				493A3499223F653900E4EFF5 /* DetalleEquipoController.swift in Sources */,
+				3A49AC3C2224969300302E54 /* orangeRoundedButton.swift in Sources */,
 				3A49AC262224936C00302E54 /* AppDelegate.swift in Sources */,
 				3AC2954D223F1A0000181F57 /* AgendarReunionUIViewController.swift in Sources */,
 				3ACB91ED223ECC6C00E913A3 /* SpecialViewController.swift in Sources */,
