@@ -15,6 +15,5 @@ class TableViewCell2: UITableViewCell {
     @IBOutlet var mainLabel: UILabel!
     @IBOutlet var lowerLabel: UILabel!
     @IBOutlet var mainButton: UIButton!
- 
 
 }

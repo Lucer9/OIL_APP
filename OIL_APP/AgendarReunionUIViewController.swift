@@ -7,13 +7,11 @@
 //
 
 import UIKit
-
 class AgendarReunionUIViewController: UIViewController {
-    @IBOutlet weak var nombreEquipo: UILabel!
     
+    @IBOutlet var nombreEquipo: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     

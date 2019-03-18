@@ -8,7 +8,7 @@
 
 import UIKit
 
-class listaEquiposViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ListaEquiposViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
    
     @IBOutlet var listaEquipos: UITableView!
     var arrayOfCellData = [cellData]()
@@ -28,6 +28,7 @@ class listaEquiposViewController: UIViewController, UITableViewDelegate, UITable
             cell.mainImageView.clipsToBounds = true
             cell.mainLabel.text = arrayOfCellData[indexPath.row].nombreEquipo
             cell.lowerLabel.text = arrayOfCellData[indexPath.row].numTareas
+            cell.mainButton.titleLabel?.text=cell.mainLabel.text
             cell.mainButton.addTarget(self, action: #selector(self.pressButton(_:)), for: .touchUpInside) //<- use `#selector(...)`
 
             return cell
@@ -45,7 +46,7 @@ class listaEquiposViewController: UIViewController, UITableViewDelegate, UITable
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if arrayOfCellData[indexPath.row].tipoCelda == "gris"{
             //Table view cell 2 row height
-            return 120
+            return 90
         }
         else{
             return 200
@@ -55,7 +56,7 @@ class listaEquiposViewController: UIViewController, UITableViewDelegate, UITable
     override func viewDidLoad() {
         listaEquipos.separatorStyle = UITableViewCell.SeparatorStyle.none
         
-        let url = URL(string:"https://androidapkcloud.com/wp-content/uploads/2017/09/Square-PhotoWithout.png")
+        let url = URL(string:"https://cdn.pixabay.com/photo/2017/05/09/21/49/gecko-2299365__480.jpg")
         
         if let data = try? Data(contentsOf: url!)
         {
@@ -70,6 +71,8 @@ class listaEquiposViewController: UIViewController, UITableViewDelegate, UITable
         arrayOfCellData.append(cellData(tipoCelda:"gris",nombreEquipo:"Pumas",numTareas:"0 Tareas",imagenEquipo: #imageLiteral(resourceName: "Screen Shot 2019-03-13 at 12.37.03 PM")))
         
         arrayOfCellData.append(cellData(tipoCelda:"gris",nombreEquipo:"Pumas",numTareas:"0 Tareas",imagenEquipo: #imageLiteral(resourceName: "Screen Shot 2019-03-13 at 12.37.03 PM")))
+        
+           arrayOfCellData.append(cellData(tipoCelda:"gris",nombreEquipo:"Pumas",numTareas:"0 Tareas",imagenEquipo: #imageLiteral(resourceName: "Screen Shot 2019-03-13 at 12.37.03 PM")))
         /*
          arrayOfCellData = [cellData(cell: 2, text: "Miguel AKA el de la MAC", image: #imageLiteral(resourceName: "Screen Shot 2019-03-13 at 12.37.03 PM")),
          cellData(cell: 2, text: "Chorlie está enojado con MAC", image: #imageLiteral(resourceName: "Screen Shot 2019-03-13 at 12.37.03 PM")),
@@ -77,13 +80,17 @@ class listaEquiposViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     @objc func pressButton(_ sender: UIButton){ //<- needs `@objc`
-        print("send")
         sender.backgroundColor = UIColor.lightGray
+        print(sender.titleLabel!.text)
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let newViewController = storyBoard.instantiateViewController(withIdentifier: "agendarReunion")
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "agendarReunion") as! AgendarReunionUIViewController
         
        self.present(newViewController, animated: true, completion: nil)
+        newViewController.nombreEquipo.text = sender.titleLabel!.text!
+
         
     }
+    
+
 
 }

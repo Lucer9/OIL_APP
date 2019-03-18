@@ -1,7 +1,7 @@
 import UIKit
 
 @IBDesignable
-class orangeRoundedButton: UIButton {
+class OrangeRoundedButton: UIButton {
 }
 
 extension UIView {
