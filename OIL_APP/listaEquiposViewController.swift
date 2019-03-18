@@ -108,4 +108,20 @@ class listaEquiposViewController: UIViewController, UITableViewDelegate, UITable
         return 120
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        var equipo = [String:Any]()
+        //Paso 15: crear un identificador para el controlador de vista a nivel detalle
+        let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "DetalleEquipo") as! DetalleEquipoController
+        
+        //Verificar si la vista actual es la de búsqueda
+        if (isFiltering()){
+            equipo = datosFiltrados[indexPath.row] as! [String: Any]
+        }else{
+            equipo = datosArray![indexPath.row] as! [String: Any]
+        }
+        
+        siguienteVista.equipo = equipo
+        self.navigationController?.pushViewController(siguienteVista, animated: true)
+        
+    }
 }
