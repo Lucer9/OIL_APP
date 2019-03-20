@@ -3,31 +3,61 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		060D5966224196040013DC27 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060D5965224196040013DC27 /* AppState.swift */; };
+		060D596A2241CD990013DC27 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060D59692241CD990013DC27 /* UIImageView.swift */; };
+		060D596D2241CE7C0013DC27 /* EquipoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060D596C2241CE7C0013DC27 /* EquipoCell.swift */; };
+		060D59712241E01C0013DC27 /* MisEquiposViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060D59702241E01C0013DC27 /* MisEquiposViewController.swift */; };
+		060D59732241FAC50013DC27 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060D59722241FAC50013DC27 /* UIButton.swift */; };
+		060D5975224206D10013DC27 /* MiEquipoTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060D5974224206D10013DC27 /* MiEquipoTabBarController.swift */; };
+		060D5977224209920013DC27 /* MisTareasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060D5976224209920013DC27 /* MisTareasViewController.swift */; };
+		060D597A22420A0C0013DC27 /* TareasPendientesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060D597922420A0C0013DC27 /* TareasPendientesViewController.swift */; };
+		060D597C22420A230013DC27 /* TareasRealizadasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060D597B22420A230013DC27 /* TareasRealizadasViewController.swift */; };
+		060D597E224218600013DC27 /* TareaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060D597D224218600013DC27 /* TareaCell.swift */; };
+		060D5980224219010013DC27 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060D597F224219010013DC27 /* UIColor.swift */; };
 		3A49AC262224936C00302E54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49AC252224936C00302E54 /* AppDelegate.swift */; };
-		3A49AC282224936C00302E54 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49AC272224936C00302E54 /* FirstViewController.swift */; };
-		3A49AC2A2224936C00302E54 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49AC292224936C00302E54 /* SecondViewController.swift */; };
 		3A49AC2D2224936C00302E54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A49AC2B2224936C00302E54 /* Main.storyboard */; };
-		3A49AC2F2224936E00302E54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A49AC2E2224936E00302E54 /* Assets.xcassets */; };
 		3A49AC322224936E00302E54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A49AC302224936E00302E54 /* LaunchScreen.storyboard */; };
-		3A49AC3C2224969300302E54 /* orangeRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49AC3B2224969300302E54 /* orangeRoundedButton.swift */; };
-		3A63710A222DFA500075F343 /* KeyboardUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A637109222DFA500075F343 /* KeyboardUIViewController.swift */; };
+		3A49AC3C2224969300302E54 /* OrangeRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49AC3B2224969300302E54 /* OrangeRoundedButton.swift */; };
+		3A529854223F719D0076CF0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A529853223F719D0076CF0A /* Assets.xcassets */; };
+		3A529856223F77D40076CF0A /* ListaMaterialTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A529855223F77D40076CF0A /* ListaMaterialTableViewController.swift */; };
+		3A9FE6EA223B7ECA00BE0965 /* ListaEquiposViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9FE6E9223B7ECA00BE0965 /* ListaEquiposViewController.swift */; };
+		3ABB27A2223B022F0001272C /* TableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB27A0223B022F0001272C /* TableViewCell2.swift */; };
+		3ABB27A3223B022F0001272C /* TableViewCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ABB27A1223B022F0001272C /* TableViewCell2.xib */; };
+		3AC2954D223F1A0000181F57 /* AgendarReunionUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC2954C223F1A0000181F57 /* AgendarReunionUIViewController.swift */; };
+		3ACB91ED223ECC6C00E913A3 /* SpecialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACB91EC223ECC6C00E913A3 /* SpecialViewController.swift */; };
+		493A3499223F653900E4EFF5 /* DetalleEquipoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493A3498223F653900E4EFF5 /* DetalleEquipoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		060D5965224196040013DC27 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		060D59692241CD990013DC27 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		060D596C2241CE7C0013DC27 /* EquipoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipoCell.swift; sourceTree = "<group>"; };
+		060D59702241E01C0013DC27 /* MisEquiposViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisEquiposViewController.swift; sourceTree = "<group>"; };
+		060D59722241FAC50013DC27 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIButton.swift; path = OIL_APP/Extensions/UIButton.swift; sourceTree = SOURCE_ROOT; };
+		060D5974224206D10013DC27 /* MiEquipoTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiEquipoTabBarController.swift; sourceTree = "<group>"; };
+		060D5976224209920013DC27 /* MisTareasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisTareasViewController.swift; sourceTree = "<group>"; };
+		060D597922420A0C0013DC27 /* TareasPendientesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TareasPendientesViewController.swift; sourceTree = "<group>"; };
+		060D597B22420A230013DC27 /* TareasRealizadasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TareasRealizadasViewController.swift; sourceTree = "<group>"; };
+		060D597D224218600013DC27 /* TareaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TareaCell.swift; sourceTree = "<group>"; };
+		060D597F224219010013DC27 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		3A49AC222224936C00302E54 /* OIL_APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OIL_APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A49AC252224936C00302E54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3A49AC272224936C00302E54 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		3A49AC292224936C00302E54 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		3A49AC2C2224936C00302E54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3A49AC2E2224936E00302E54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A49AC312224936E00302E54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A49AC332224936E00302E54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A49AC3B2224969300302E54 /* orangeRoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = orangeRoundedButton.swift; sourceTree = "<group>"; };
-		3A637109222DFA500075F343 /* KeyboardUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardUIViewController.swift; sourceTree = "<group>"; };
+		3A49AC3B2224969300302E54 /* OrangeRoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrangeRoundedButton.swift; sourceTree = "<group>"; };
+		3A529853223F719D0076CF0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A529855223F77D40076CF0A /* ListaMaterialTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaMaterialTableViewController.swift; sourceTree = "<group>"; };
+		3A9FE6E9223B7ECA00BE0965 /* ListaEquiposViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaEquiposViewController.swift; sourceTree = "<group>"; };
+		3ABB27A0223B022F0001272C /* TableViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell2.swift; sourceTree = "<group>"; };
+		3ABB27A1223B022F0001272C /* TableViewCell2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell2.xib; sourceTree = "<group>"; };
+		3AC2954C223F1A0000181F57 /* AgendarReunionUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendarReunionUIViewController.swift; sourceTree = "<group>"; };
+		3ACB91EC223ECC6C00E913A3 /* SpecialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecialViewController.swift; sourceTree = "<group>"; };
+		493A3498223F653900E4EFF5 /* DetalleEquipoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleEquipoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,11 +71,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		060D596B2241CDC20013DC27 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				060D59692241CD990013DC27 /* UIImageView.swift */,
+				060D59722241FAC50013DC27 /* UIButton.swift */,
+				060D597F224219010013DC27 /* UIColor.swift */,
+			);
+			name = Extensions;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		060D5978224209BF0013DC27 /* MiEquipo */ = {
+			isa = PBXGroup;
+			children = (
+				060D5974224206D10013DC27 /* MiEquipoTabBarController.swift */,
+				060D5976224209920013DC27 /* MisTareasViewController.swift */,
+				060D597922420A0C0013DC27 /* TareasPendientesViewController.swift */,
+				060D597B22420A230013DC27 /* TareasRealizadasViewController.swift */,
+				060D597D224218600013DC27 /* TareaCell.swift */,
+			);
+			path = MiEquipo;
+			sourceTree = "<group>";
+		};
 		3A49AC192224936C00302E54 = {
 			isa = PBXGroup;
 			children = (
-				3A637109222DFA500075F343 /* KeyboardUIViewController.swift */,
-				3A49AC3B2224969300302E54 /* orangeRoundedButton.swift */,
 				3A49AC242224936C00302E54 /* OIL_APP */,
 				3A49AC232224936C00302E54 /* Products */,
 			);
@@ -62,13 +113,24 @@
 		3A49AC242224936C00302E54 /* OIL_APP */ = {
 			isa = PBXGroup;
 			children = (
+				060D5978224209BF0013DC27 /* MiEquipo */,
+				060D59702241E01C0013DC27 /* MisEquiposViewController.swift */,
+				060D596B2241CDC20013DC27 /* Extensions */,
+				3A529855223F77D40076CF0A /* ListaMaterialTableViewController.swift */,
 				3A49AC252224936C00302E54 /* AppDelegate.swift */,
-				3A49AC272224936C00302E54 /* FirstViewController.swift */,
-				3A49AC292224936C00302E54 /* SecondViewController.swift */,
 				3A49AC2B2224936C00302E54 /* Main.storyboard */,
-				3A49AC2E2224936E00302E54 /* Assets.xcassets */,
+				3AC2954C223F1A0000181F57 /* AgendarReunionUIViewController.swift */,
+				3A9FE6E9223B7ECA00BE0965 /* ListaEquiposViewController.swift */,
+				060D596C2241CE7C0013DC27 /* EquipoCell.swift */,
+				3A49AC3B2224969300302E54 /* OrangeRoundedButton.swift */,
+				3ABB27A0223B022F0001272C /* TableViewCell2.swift */,
+				3ABB27A1223B022F0001272C /* TableViewCell2.xib */,
 				3A49AC302224936E00302E54 /* LaunchScreen.storyboard */,
 				3A49AC332224936E00302E54 /* Info.plist */,
+				3ACB91EC223ECC6C00E913A3 /* SpecialViewController.swift */,
+				3A529853223F719D0076CF0A /* Assets.xcassets */,
+				493A3498223F653900E4EFF5 /* DetalleEquipoController.swift */,
+				060D5965224196040013DC27 /* AppState.swift */,
 			);
 			path = OIL_APP;
 			sourceTree = "<group>";
@@ -105,11 +167,12 @@
 				TargetAttributes = {
 					3A49AC212224936C00302E54 = {
 						CreatedOnToolsVersion = 10.0;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = 3A49AC1D2224936C00302E54 /* Build configuration list for PBXProject "OIL_APP" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -131,8 +194,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ABB27A3223B022F0001272C /* TableViewCell2.xib in Resources */,
 				3A49AC322224936E00302E54 /* LaunchScreen.storyboard in Resources */,
-				3A49AC2F2224936E00302E54 /* Assets.xcassets in Resources */,
+				3A529854223F719D0076CF0A /* Assets.xcassets in Resources */,
 				3A49AC2D2224936C00302E54 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,11 +208,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A63710A222DFA500075F343 /* KeyboardUIViewController.swift in Sources */,
-				3A49AC2A2224936C00302E54 /* SecondViewController.swift in Sources */,
-				3A49AC3C2224969300302E54 /* orangeRoundedButton.swift in Sources */,
+				3ABB27A2223B022F0001272C /* TableViewCell2.swift in Sources */,
+				060D5980224219010013DC27 /* UIColor.swift in Sources */,
+				3A9FE6EA223B7ECA00BE0965 /* ListaEquiposViewController.swift in Sources */,
+				060D5975224206D10013DC27 /* MiEquipoTabBarController.swift in Sources */,
+				060D5977224209920013DC27 /* MisTareasViewController.swift in Sources */,
+				3A529856223F77D40076CF0A /* ListaMaterialTableViewController.swift in Sources */,
+				060D597A22420A0C0013DC27 /* TareasPendientesViewController.swift in Sources */,
+				060D596A2241CD990013DC27 /* UIImageView.swift in Sources */,
+				060D597C22420A230013DC27 /* TareasRealizadasViewController.swift in Sources */,
+				060D59712241E01C0013DC27 /* MisEquiposViewController.swift in Sources */,
+				060D59732241FAC50013DC27 /* UIButton.swift in Sources */,
+				3A49AC3C2224969300302E54 /* OrangeRoundedButton.swift in Sources */,
+				3A9FE6EA223B7ECA00BE0965 /* ListaEquiposViewController.swift in Sources */,
+				493A3499223F653900E4EFF5 /* DetalleEquipoController.swift in Sources */,
+				060D5966224196040013DC27 /* AppState.swift in Sources */,
+				3A49AC3C2224969300302E54 /* OrangeRoundedButton.swift in Sources */,
+				060D597E224218600013DC27 /* TareaCell.swift in Sources */,
 				3A49AC262224936C00302E54 /* AppDelegate.swift in Sources */,
-				3A49AC282224936C00302E54 /* FirstViewController.swift in Sources */,
+				3AC2954D223F1A0000181F57 /* AgendarReunionUIViewController.swift in Sources */,
+				060D596D2241CE7C0013DC27 /* EquipoCell.swift in Sources */,
+				3ACB91ED223ECC6C00E913A3 /* SpecialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,8 +364,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -297,10 +376,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z7T452MF6T;
 				INFOPLIST_FILE = OIL_APP/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Equipo2.1.OIL-APP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -315,10 +391,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z7T452MF6T;
 				INFOPLIST_FILE = OIL_APP/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Equipo2.1.OIL-APP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
