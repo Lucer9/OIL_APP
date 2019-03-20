@@ -119,7 +119,7 @@
                 <outlet property="mainLabel" destination="LIe-u0-A0i" id="1uY-3Z-J3W"/>
                 <outlet property="secondaryButton" destination="ZfI-IW-inL" id="Cgh-Ld-kpI"/>
             </connections>
-            <point key="canvasLocation" x="169.59999999999999" y="201.49925037481262"/>
+            <point key="canvasLocation" x="1931" y="139"/>
         </tableViewCell>
     </objects>
     <resources>

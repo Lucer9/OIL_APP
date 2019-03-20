@@ -1,0 +1,18 @@
+//
+//  EquipoCell.swift
+//  OIL_APP
+//
+//  Created by Miguel Gallardo on 3/19/19.
+//  Copyright © 2019 JAMO-JMGT-CAO. All rights reserved.
+//
+
+import UIKit
+
+class EquipoCell: UITableViewCell{
+    
+    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var nombreLabel: UILabel!
+    @IBOutlet weak var tareasLabel: UILabel!
+    @IBOutlet weak var imagen: UIImageView!
+    
+}
