@@ -21,6 +21,17 @@
         "numComentarios": 2
     },
     {
+        "realizada": false,
+        "color": "#FDE2E7FF",
+        "titulo": "Configurar servidor",
+        "fecha": 1551998113,
+        "equipo": "2",
+        "descripcion": "Configurar el servidor con los siguientes atributos:",
+        "importancia": 8,
+        "asignadoA": "a01678524",
+        "numComentarios": 0
+    },
+    {
         "realizada": true,
         "color": "#FDE2E7FF",
         "titulo": "Configurar servidor",
