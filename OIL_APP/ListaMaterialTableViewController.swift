@@ -7,40 +7,92 @@
 //
 
 import UIKit
-var materiales = [""]
+
 class ListaMaterialTableViewController: UITableViewController {
+    
+    let urlString="https://raw.githubusercontent.com/Lucer9/OIL_APP/json/jsonFiles/salones.json"
+    
+    var datosArray:[Any]?
+    var salonSeleccionado: [String:Any]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        let url = URL(string: urlString)
+        let datos = try? Data(contentsOf: url!)
+        datosArray = try! JSONSerialization.jsonObject(with: datos!) as? [Any]
+        datosArray = datosArray!.filter {
+            let salon=$0 as! [String:Any]
+            let s = salon["salon"]
+            return s as? String == "305-B" // || s as? Int == 305
+        }
+        
+        salonSeleccionado = datosArray?[0] as? [String:Any]
+        
+        tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 6
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        switch section {
+            case 0: return "Número del salón"
+            case 1: return "Nombre del salón"
+            case 2: return "Horario"
+            case 3: return "Equipamiento"
+            case 4: return "Contacto"
+            case 5: return "Descripción"
+            default: return nil
+        }
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        let numMateriales = (salonSeleccionado["equipamiento"] as? [String])?.count
+        
+        switch section {
+            case 0: return 1
+            case 1: return 1
+            case 2: return 1
+            case 3: return (numMateriales)!
+            case 4: return 1
+            case 5: return 1
+            default: return 0
+        }
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "salonCell", for: indexPath) as! SalonCell
 
-        // Configure the cell...
-
+        switch indexPath.section {
+            case 0:
+                if let salon = salonSeleccionado["salon"] as? String{
+                    cell.label.text = salon
+                }else{
+                    cell.label.text = "\(salonSeleccionado["salon"] as? Int)"
+                }
+            case 1: cell.label.text = salonSeleccionado["nombre"] as? String
+            case 2: cell.label.text = salonSeleccionado["horario"] as? String
+        case 3: cell.label.text = (salonSeleccionado["equipamiento"] as! [String])[indexPath.row] as? String
+            case 4: cell.label.text = salonSeleccionado["correoResponsable"] as? String
+            case 5: cell.label.text = salonSeleccionado["descripcion"] as? String
+            default: cell.label.text = ""
+        }
+        
+        cell.label.numberOfLines = 0
+        cell.label.lineBreakMode = NSLineBreakMode.byWordWrapping
+        cell.label.sizeToFit()
+        
         return cell
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
 
     /*
     // Override to support conditional editing of the table view.

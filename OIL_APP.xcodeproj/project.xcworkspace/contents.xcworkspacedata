@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/cao/Documents/ITESM/6SEM/Mobiles/OIL_APP/OIL_APP/Main.storyboard">
-   </FileRef>
-   <FileRef
-      location = "self:OIL_APP.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>

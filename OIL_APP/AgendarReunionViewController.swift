@@ -7,12 +7,16 @@
 //
 
 import UIKit
-class AgendarReunionUIViewController: UIViewController {
+class AgendarReunionViewController: UIViewController {
     
-    @IBOutlet var nombreEquipo: UILabel!
+    @IBOutlet var nombreEquipoLabel: UILabel!
+    
+    var nombreEquipo:String!
+    var idEquipo:String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        nombreEquipoLabel.text = nombreEquipo
     }
 
 }

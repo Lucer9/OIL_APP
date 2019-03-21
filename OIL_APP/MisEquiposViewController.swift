@@ -8,6 +8,16 @@
 
 import UIKit
 
+extension MisEquiposViewController: EquipoCellDelegate{
+    func didTapAgendarReunion(idEquipo: String, nombreEquipo: String) {
+        let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "agendarReunion") as! AgendarReunionViewController
+        
+        siguienteVista.idEquipo = idEquipo
+        siguienteVista.nombreEquipo = nombreEquipo
+        
+        present(siguienteVista, animated: true, completion: nil)
+    }
+}
 extension MisEquiposViewController: UISearchResultsUpdating {
     // MARK: - UISearchResultsUpdating Delegate
     func updateSearchResults(for searchController: UISearchController) {
@@ -107,6 +117,10 @@ class MisEquiposViewController: UIViewController, UITableViewDelegate, UITableVi
         }else{
             cellImage = #imageLiteral(resourceName: "Screen Shot 2019-03-13 at 12.37.03 PM")
         }
+        
+        cell.idEquipo = cellData["idEquipo"] as? String
+        cell.nombreEquipo = cellData["nombreEquipo"] as? String
+        
         cell.imagen.image = cellImage
         cell.imagen.roundedImage()
         cell.button.roundCorners()
@@ -116,6 +130,7 @@ class MisEquiposViewController: UIViewController, UITableViewDelegate, UITableVi
         let cellNumTareasPendientesText = "\(cellNumTareasPendientes) tareas pendientes"
         cell.tareasLabel.text =     cellNumTareasPendientesText
         
+        cell.delegate = self
         return cell
     }
     
