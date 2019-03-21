@@ -24,6 +24,7 @@
 		3A529854223F719D0076CF0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A529853223F719D0076CF0A /* Assets.xcassets */; };
 		3A529856223F77D40076CF0A /* ListaMaterialTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A529855223F77D40076CF0A /* ListaMaterialTableViewController.swift */; };
 		3A59D1982242D320004118DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A59D1972242D320004118DF /* Main.storyboard */; };
+		3A59D19A2242EABE004118DF /* AcercaDeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A59D1992242EABE004118DF /* AcercaDeViewController.swift */; };
 		3A9FE6EA223B7ECA00BE0965 /* ListaEquiposViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9FE6E9223B7ECA00BE0965 /* ListaEquiposViewController.swift */; };
 		3ABB27A2223B022F0001272C /* TableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB27A0223B022F0001272C /* TableViewCell2.swift */; };
 		3ABB27A3223B022F0001272C /* TableViewCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ABB27A1223B022F0001272C /* TableViewCell2.xib */; };
@@ -52,6 +53,7 @@
 		3A529853223F719D0076CF0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A529855223F77D40076CF0A /* ListaMaterialTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaMaterialTableViewController.swift; sourceTree = "<group>"; };
 		3A59D1972242D320004118DF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3A59D1992242EABE004118DF /* AcercaDeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcercaDeViewController.swift; sourceTree = "<group>"; };
 		3A9FE6E9223B7ECA00BE0965 /* ListaEquiposViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaEquiposViewController.swift; sourceTree = "<group>"; };
 		3ABB27A0223B022F0001272C /* TableViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell2.swift; sourceTree = "<group>"; };
 		3ABB27A1223B022F0001272C /* TableViewCell2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell2.xib; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				060D596C2241CE7C0013DC27 /* EquipoCell.swift */,
 				3A49AC3B2224969300302E54 /* OrangeRoundedButton.swift */,
 				3A59D1972242D320004118DF /* Main.storyboard */,
+				3A59D1992242EABE004118DF /* AcercaDeViewController.swift */,
 				3ABB27A0223B022F0001272C /* TableViewCell2.swift */,
 				3ABB27A1223B022F0001272C /* TableViewCell2.xib */,
 				3A49AC302224936E00302E54 /* LaunchScreen.storyboard */,
@@ -218,6 +221,7 @@
 				060D596A2241CD990013DC27 /* UIImageView.swift in Sources */,
 				060D597C22420A230013DC27 /* TareasRealizadasViewController.swift in Sources */,
 				060D59712241E01C0013DC27 /* MisEquiposViewController.swift in Sources */,
+				3A59D19A2242EABE004118DF /* AcercaDeViewController.swift in Sources */,
 				060D59732241FAC50013DC27 /* UIButton.swift in Sources */,
 				3A49AC3C2224969300302E54 /* OrangeRoundedButton.swift in Sources */,
 				3A9FE6EA223B7ECA00BE0965 /* ListaEquiposViewController.swift in Sources */,
