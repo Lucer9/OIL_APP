@@ -627,7 +627,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Info" style="done" id="D3m-gy-vgD">
                             <connections>
-                                <segue destination="S19-rm-eYW" kind="presentation" id="fqh-z2-hUi"/>
+                                <segue destination="Yts-s3-mqE" kind="show" id="7Gu-yk-fkP"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1751,12 +1751,12 @@
         <image name="fader" width="7" height="10"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="4M3-Kx-KfJ"/>
         <segue reference="LFb-L8-lQ4"/>
         <segue reference="Q5E-02-6z9"/>
         <segue reference="Hvh-S7-G4P"/>
         <segue reference="3e5-Mc-OIJ"/>
-        <segue reference="Qdw-tS-EZG"/>
+        <segue reference="spH-jD-atG"/>
         <segue reference="w2U-k6-E8u"/>
-        <segue reference="fqh-z2-hUi"/>
     </inferredMetricsTieBreakers>
 </document>
