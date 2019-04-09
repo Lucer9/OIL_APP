@@ -695,9 +695,16 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <searchBar contentMode="redraw" searchBarStyle="minimal" text="CIMB" placeholder="Buscar salon" translatesAutoresizingMaskIntoConstraints="NO" id="P9C-gc-WOG">
-                                <rect key="frame" x="16" y="123" width="343" height="56"/>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" text="CIMB" placeholder="Buscar salon" showsScopeBar="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P9C-gc-WOG">
+                                <rect key="frame" x="16" y="123" width="343" height="100"/>
+                                <color key="tintColor" red="0.92122232910000001" green="0.433392942" blue="0.17631673810000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>CCM</string>
+                                    <string>CSF</string>
+                                    <string>CEM</string>
+                                </scopeButtonTitles>
                             </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1751,12 +1758,12 @@
         <image name="fader" width="7" height="10"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="4M3-Kx-KfJ"/>
+        <segue reference="Yfj-b6-Fmh"/>
         <segue reference="LFb-L8-lQ4"/>
         <segue reference="Q5E-02-6z9"/>
         <segue reference="Hvh-S7-G4P"/>
         <segue reference="3e5-Mc-OIJ"/>
-        <segue reference="spH-jD-atG"/>
+        <segue reference="Qdw-tS-EZG"/>
         <segue reference="w2U-k6-E8u"/>
     </inferredMetricsTieBreakers>
 </document>
