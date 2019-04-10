@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		060D5966224196040013DC27 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060D5965224196040013DC27 /* AppState.swift */; };
 		060D596A2241CD990013DC27 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060D59692241CD990013DC27 /* UIImageView.swift */; };
 		060D596D2241CE7C0013DC27 /* EquipoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060D596C2241CE7C0013DC27 /* EquipoCell.swift */; };
 		060D59712241E01C0013DC27 /* MisEquiposViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060D59702241E01C0013DC27 /* MisEquiposViewController.swift */; };
@@ -25,16 +24,11 @@
 		3A529856223F77D40076CF0A /* ListaMaterialTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A529855223F77D40076CF0A /* ListaMaterialTableViewController.swift */; };
 		3A59D1982242D320004118DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A59D1972242D320004118DF /* Main.storyboard */; };
 		3A59D19A2242EABE004118DF /* AcercaDeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A59D1992242EABE004118DF /* AcercaDeViewController.swift */; };
-		3ABB27A2223B022F0001272C /* TableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB27A0223B022F0001272C /* TableViewCell2.swift */; };
-		3ABB27A3223B022F0001272C /* TableViewCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ABB27A1223B022F0001272C /* TableViewCell2.xib */; };
 		3AC2954D223F1A0000181F57 /* AgendarReunionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC2954C223F1A0000181F57 /* AgendarReunionViewController.swift */; };
-		3ACB91ED223ECC6C00E913A3 /* SpecialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACB91EC223ECC6C00E913A3 /* SpecialViewController.swift */; };
-		493A3499223F653900E4EFF5 /* DetalleEquipoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493A3498223F653900E4EFF5 /* DetalleEquipoController.swift */; };
 		493C746E2243664300B499F3 /* SalonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C746D2243664300B499F3 /* SalonCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		060D5965224196040013DC27 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		060D59692241CD990013DC27 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		060D596C2241CE7C0013DC27 /* EquipoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipoCell.swift; sourceTree = "<group>"; };
 		060D59702241E01C0013DC27 /* MisEquiposViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisEquiposViewController.swift; sourceTree = "<group>"; };
@@ -54,11 +48,7 @@
 		3A529855223F77D40076CF0A /* ListaMaterialTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaMaterialTableViewController.swift; sourceTree = "<group>"; };
 		3A59D1972242D320004118DF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3A59D1992242EABE004118DF /* AcercaDeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcercaDeViewController.swift; sourceTree = "<group>"; };
-		3ABB27A0223B022F0001272C /* TableViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell2.swift; sourceTree = "<group>"; };
-		3ABB27A1223B022F0001272C /* TableViewCell2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell2.xib; sourceTree = "<group>"; };
 		3AC2954C223F1A0000181F57 /* AgendarReunionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendarReunionViewController.swift; sourceTree = "<group>"; };
-		3ACB91EC223ECC6C00E913A3 /* SpecialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecialViewController.swift; sourceTree = "<group>"; };
-		493A3498223F653900E4EFF5 /* DetalleEquipoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleEquipoController.swift; sourceTree = "<group>"; };
 		493C746D2243664300B499F3 /* SalonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,14 +116,9 @@
 				3A59D1972242D320004118DF /* Main.storyboard */,
 				493C746D2243664300B499F3 /* SalonCell.swift */,
 				3A59D1992242EABE004118DF /* AcercaDeViewController.swift */,
-				3ABB27A0223B022F0001272C /* TableViewCell2.swift */,
-				3ABB27A1223B022F0001272C /* TableViewCell2.xib */,
 				3A49AC302224936E00302E54 /* LaunchScreen.storyboard */,
 				3A49AC332224936E00302E54 /* Info.plist */,
-				3ACB91EC223ECC6C00E913A3 /* SpecialViewController.swift */,
 				3A529853223F719D0076CF0A /* Assets.xcassets */,
-				493A3498223F653900E4EFF5 /* DetalleEquipoController.swift */,
-				060D5965224196040013DC27 /* AppState.swift */,
 			);
 			path = OIL_APP;
 			sourceTree = "<group>";
@@ -197,7 +182,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3ABB27A3223B022F0001272C /* TableViewCell2.xib in Resources */,
 				3A49AC322224936E00302E54 /* LaunchScreen.storyboard in Resources */,
 				3A529854223F719D0076CF0A /* Assets.xcassets in Resources */,
 				3A59D1982242D320004118DF /* Main.storyboard in Resources */,
@@ -211,7 +195,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3ABB27A2223B022F0001272C /* TableViewCell2.swift in Sources */,
 				060D5980224219010013DC27 /* UIColor.swift in Sources */,
 				060D5975224206D10013DC27 /* MiEquipoTabBarController.swift in Sources */,
 				060D5977224209920013DC27 /* MisTareasViewController.swift in Sources */,
@@ -224,14 +207,11 @@
 				3A59D19A2242EABE004118DF /* AcercaDeViewController.swift in Sources */,
 				060D59732241FAC50013DC27 /* UIButton.swift in Sources */,
 				3A49AC3C2224969300302E54 /* OrangeRoundedButton.swift in Sources */,
-				493A3499223F653900E4EFF5 /* DetalleEquipoController.swift in Sources */,
-				060D5966224196040013DC27 /* AppState.swift in Sources */,
 				3A49AC3C2224969300302E54 /* OrangeRoundedButton.swift in Sources */,
 				060D597E224218600013DC27 /* TareaCell.swift in Sources */,
 				3A49AC262224936C00302E54 /* AppDelegate.swift in Sources */,
 				3AC2954D223F1A0000181F57 /* AgendarReunionViewController.swift in Sources */,
 				060D596D2241CE7C0013DC27 /* EquipoCell.swift in Sources */,
-				3ACB91ED223ECC6C00E913A3 /* SpecialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

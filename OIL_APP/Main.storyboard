@@ -497,11 +497,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Laboratorio CIMB" prompt="CEDETEC | 3Piso" id="lFR-7p-dqC">
                         <barButtonItem key="backBarButtonItem" title="Regresar" id="l4U-bh-LLH"/>
-                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="8bp-ls-0oX">
-                            <connections>
-                                <segue destination="S19-rm-eYW" kind="presentation" id="4M3-Kx-KfJ"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="8bp-ls-0oX"/>
                         <barButtonItem key="rightBarButtonItem" title="Info" style="done" id="D3m-gy-vgD">
                             <connections>
                                 <segue destination="Yts-s3-mqE" kind="show" id="7Gu-yk-fkP"/>
@@ -511,7 +507,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b92-TG-yYe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="847" y="-764"/>
+            <point key="canvasLocation" x="624" y="-1633"/>
         </scene>
         <!--agendarReunion-->
         <scene sceneID="5bO-8u-8Uj">
@@ -581,7 +577,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Ver salón"/>
                                 <connections>
-                                    <segue destination="wGV-dH-MuX" kind="show" id="Yfj-b6-Fmh"/>
+                                    <segue destination="VBO-Bh-38b" kind="show" id="VeX-6e-W8g"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -610,7 +606,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="2274.375" y="-764.78873239436621"/>
+            <point key="canvasLocation" x="2181" y="-1666"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Mkg-Ga-WSx">
@@ -1476,48 +1472,47 @@
             <point key="canvasLocation" x="3220" y="921.58920539730138"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="yhA-76-zsx">
+        <scene sceneID="vnc-hj-dW7">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wGV-dH-MuX" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="98G-1B-dtC" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4iM-jp-ve7">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FIO-9P-Q72">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="VBO-Bh-38b" kind="relationship" relationship="rootViewController" id="PWA-Et-pkb"/>
+                        <segue destination="S19-rm-eYW" kind="relationship" relationship="rootViewController" id="pe8-WW-XiS"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TGZ-eD-azX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eUM-s4-NQX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1558" y="-764"/>
+            <point key="canvasLocation" x="2871" y="-923"/>
         </scene>
     </scenes>
     <resources>
         <image name="3D" width="402" height="446"/>
-        <image name="AddTask" width="219" height="380"/>
-        <image name="AddTeam" width="216" height="386"/>
-        <image name="Bookings" width="20" height="20.5"/>
+        <image name="AddTask" width="438" height="760"/>
+        <image name="AddTeam" width="432" height="772"/>
+        <image name="Bookings" width="20" height="20"/>
         <image name="Carlos" width="200" height="200"/>
         <image name="Carrete" width="720" height="1280"/>
-        <image name="Detalle" width="451" height="371"/>
-        <image name="Doc" width="134" height="135"/>
-        <image name="Image" width="25" height="25"/>
-        <image name="Integrantes" width="600" height="368"/>
+        <image name="Detalle" width="902" height="742"/>
+        <image name="Doc" width="268" height="270"/>
+        <image name="Image" width="60" height="60"/>
+        <image name="Integrantes" width="1200" height="736"/>
         <image name="José Alejandro" width="1280" height="1280"/>
         <image name="José Miguel" width="640" height="640"/>
-        <image name="Logo" width="620" height="620.5"/>
+        <image name="Logo" width="620" height="620"/>
         <image name="People" width="24" height="24"/>
         <image name="Person" width="24" height="24"/>
         <image name="Ready" width="24" height="24"/>
         <image name="Settings" width="20" height="20"/>
         <image name="Woods" width="277" height="609"/>
-        <image name="fader" width="7" height="10"/>
+        <image name="fader" width="3" height="5"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Yfj-b6-Fmh"/>
-        <segue reference="LFb-L8-lQ4"/>
+        <segue reference="St7-No-3fp"/>
         <segue reference="pdw-hf-Xrq"/>
         <segue reference="lzd-DI-E93"/>
         <segue reference="3e5-Mc-OIJ"/>
