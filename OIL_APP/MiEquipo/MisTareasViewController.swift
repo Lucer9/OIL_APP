@@ -16,15 +16,18 @@ extension MisTareasViewController: UISearchResultsUpdating {
 }
 
 class MisTareasViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
     @IBOutlet weak var nombreLabel: UILabel!
     @IBOutlet weak var listaTareas: UITableView!
     
-    let urlString="https://raw.githubusercontent.com/Lucer9/OIL_APP/vistas_carlos/jsonFiles/tareas.json"
+    let urlString="https://raw.githubusercontent.com/Lucer9/OIL_APP/ImplementarNavController/jsonFiles/tareas.json"
     
     var idEquipo: String = "1"
     var datosArray:[Any]?
     var datosFiltrados = [Any]()
+    var usuariosArray:[Any]?
+    var usuariosFiltrados = [Any]()
+    
     let searchController: UISearchController = UISearchController(searchResultsController: nil)
     
     func isFiltering() -> Bool {
@@ -55,15 +58,46 @@ class MisTareasViewController: UIViewController, UITableViewDelegate, UITableVie
         listaTareas.dataSource = self
         
         idEquipo = controller.idEquipo
-
-        let url = URL(string: urlString)
-        let datos = try? Data(contentsOf: url!)
+        
+        var url = URL(string: urlString)
+        var datos = try? Data(contentsOf: url!)
         datosArray = try! JSONSerialization.jsonObject(with: datos!) as? [Any]
         datosArray = datosArray!.filter {
             let tarea=$0 as! [String:Any]
             let s:String = tarea["equipo"] as! String
+            
+            if(tarea["reunion"] as? Bool ?? false){
+                return s == idEquipo
+            }
+            
             let asignadoA:String = tarea["asignadoA"] as! String
             return s == idEquipo && asignadoA == "l01556728"
+        }
+        
+        let integrantesUrlString="https://raw.githubusercontent.com/Lucer9/OIL_APP/vistas_carlos/jsonFiles/integrantes.json"
+        url = URL(string: integrantesUrlString)
+        datos = try? Data(contentsOf: url!)
+        usuariosArray = try! JSONSerialization.jsonObject(with: datos!) as? [Any]
+        
+        datosArray = datosArray!.map{
+            
+            var dato = $0 as! [String:Any]
+            
+            if(dato["reunion"] as? Bool ?? false){
+                return dato;
+            }
+            let idAsignadoA = dato["asignadoA"] as? String
+            
+            usuariosFiltrados = usuariosArray!.filter {
+                let usuario=$0 as! [String:Any]
+                let s:String = usuario["id"] as! String;
+                return s == idAsignadoA
+            }
+            
+            let asignadoA = usuariosFiltrados[0] as! [String : Any]
+            dato["asignadoA"] = asignadoA
+            
+            return dato
         }
         
         searchController.searchResultsUpdater = self
@@ -76,7 +110,7 @@ class MisTareasViewController: UIViewController, UITableViewDelegate, UITableVie
         
         listaTareas.tableHeaderView = searchController.searchBar
     }
-
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         if isFiltering() {
             return datosFiltrados.count
@@ -109,42 +143,60 @@ class MisTareasViewController: UIViewController, UITableViewDelegate, UITableVie
             cellData = datosArray?[indexPath.section] as! [String: Any]
         }
         
-        let integrantesUrlString="https://raw.githubusercontent.com/Lucer9/OIL_APP/vistas_carlos/jsonFiles/integrantes.json"
-        var asignadoA = [String:Any]()
-        var usuariosArray:[Any]?
-        
-        let url = URL(string: integrantesUrlString)
-        let datos = try? Data(contentsOf: url!)
-        
-        let idAsignadoA = cellData["asignadoA"] as? String
-        usuariosArray = try! JSONSerialization.jsonObject(with: datos!) as? [Any]
-        usuariosArray = usuariosArray!.filter {
-            let usuario=$0 as! [String:Any]
-            let s:String = usuario["id"] as! String;
-            return s == idAsignadoA
-        }
-        
-        asignadoA = usuariosArray?[0] as! [String : Any]
-        
-        print(asignadoA)
-        
-        let cellImageURLString = asignadoA["imagen"] as! String
-        let cellImageURL = URL(string: cellImageURLString)
-        var cellImage: UIImage
-        if let imageData = try? Data(contentsOf: cellImageURL!)
-        {
-            cellImage = UIImage(data: imageData)!
+        if(cellData["reunion"] as? Bool ?? false){
+            //Aqui falta hacer que se carge la imagen del equipo
+            cell.imagen.setImageFromURL(imageURLString: "https://via.placeholder.com/70")
         }else{
-            cellImage = #imageLiteral(resourceName: "Screen Shot 2019-03-13 at 12.37.03 PM")
+            let asignadoA = cellData["asignadoA"] as! [String: Any]
+            cell.imagen.setImageFromURL(imageURLString: asignadoA["imagen"] as! String)
         }
-        
-        cell.imagen.image = cellImage
         cell.imagen.roundedImage()
         cell.cellButton.roundCorners()
         let hexColor = cellData["color"] as? String
         cell.cellButton.backgroundColor =  UIColor(hexString: hexColor!)
-        cell.tituloLabel.text = cellData["titulo"] as! String
-
+        cell.tituloLabel.text = cellData["titulo"] as? String
+        
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        var cellData: [String: Any]
+        if isFiltering() {
+            cellData = datosFiltrados[indexPath.section] as! [String: Any]
+        } else {
+            cellData = datosArray?[indexPath.section] as! [String: Any]
+        }
+        
+        if(cellData["reunion"] as? Bool ?? false){
+            self.performSegue(withIdentifier: "DetalleReunion", sender: indexPath)
+        }else{
+            self.performSegue(withIdentifier: "DetalleTarea", sender: indexPath)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier=="DetalleTarea"){
+            let controller = segue.destination as! DetalleTareaViewController
+            let section = (sender as! NSIndexPath).section;
+            var cellData: [String: Any]
+            if isFiltering() {
+                cellData = datosFiltrados[section] as! [String: Any]
+            } else {
+                cellData = datosArray?[section] as! [String: Any]
+            }
+            
+            controller.tarea = cellData
+        }else if(segue.identifier=="DetalleReunion"){
+            let controller = segue.destination as! DetalleReunionViewController
+            let section = (sender as! NSIndexPath).section;
+            var cellData: [String: Any]
+            if isFiltering() {
+                cellData = datosFiltrados[section] as! [String: Any]
+            } else {
+                cellData = datosArray?[section] as! [String: Any]
+            }
+            
+            controller.reunion = cellData
+        }
     }
 }

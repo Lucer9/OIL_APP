@@ -17,6 +17,8 @@
 		060D597C22420A230013DC27 /* TareasRealizadasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060D597B22420A230013DC27 /* TareasRealizadasViewController.swift */; };
 		060D597E224218600013DC27 /* TareaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060D597D224218600013DC27 /* TareaCell.swift */; };
 		060D5980224219010013DC27 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060D597F224219010013DC27 /* UIColor.swift */; };
+		395C26EB225E8C550084549E /* DetalleReunionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C26EA225E8C550084549E /* DetalleReunionViewController.swift */; };
+		395C26ED225E8C7D0084549E /* DetalleTareaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C26EC225E8C7D0084549E /* DetalleTareaViewController.swift */; };
 		3A49AC262224936C00302E54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49AC252224936C00302E54 /* AppDelegate.swift */; };
 		3A49AC322224936E00302E54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A49AC302224936E00302E54 /* LaunchScreen.storyboard */; };
 		3A49AC3C2224969300302E54 /* OrangeRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49AC3B2224969300302E54 /* OrangeRoundedButton.swift */; };
@@ -39,6 +41,8 @@
 		060D597B22420A230013DC27 /* TareasRealizadasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TareasRealizadasViewController.swift; sourceTree = "<group>"; };
 		060D597D224218600013DC27 /* TareaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TareaCell.swift; sourceTree = "<group>"; };
 		060D597F224219010013DC27 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		395C26EA225E8C550084549E /* DetalleReunionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleReunionViewController.swift; sourceTree = "<group>"; };
+		395C26EC225E8C7D0084549E /* DetalleTareaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleTareaViewController.swift; sourceTree = "<group>"; };
 		3A49AC222224936C00302E54 /* OIL_APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OIL_APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A49AC252224936C00302E54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A49AC312224936E00302E54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -86,6 +90,15 @@
 			path = MiEquipo;
 			sourceTree = "<group>";
 		};
+		395C26E9225E8C2B0084549E /* DetalleViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				395C26EA225E8C550084549E /* DetalleReunionViewController.swift */,
+				395C26EC225E8C7D0084549E /* DetalleTareaViewController.swift */,
+			);
+			path = DetalleViewControllers;
+			sourceTree = "<group>";
+		};
 		3A49AC192224936C00302E54 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +118,7 @@
 		3A49AC242224936C00302E54 /* OIL_APP */ = {
 			isa = PBXGroup;
 			children = (
+				395C26E9225E8C2B0084549E /* DetalleViewControllers */,
 				060D5978224209BF0013DC27 /* MiEquipo */,
 				060D59702241E01C0013DC27 /* MisEquiposViewController.swift */,
 				060D596B2241CDC20013DC27 /* Extensions */,
@@ -204,11 +218,13 @@
 				060D597C22420A230013DC27 /* TareasRealizadasViewController.swift in Sources */,
 				060D59712241E01C0013DC27 /* MisEquiposViewController.swift in Sources */,
 				493C746E2243664300B499F3 /* SalonCell.swift in Sources */,
+				395C26EB225E8C550084549E /* DetalleReunionViewController.swift in Sources */,
 				3A59D19A2242EABE004118DF /* AcercaDeViewController.swift in Sources */,
 				060D59732241FAC50013DC27 /* UIButton.swift in Sources */,
 				3A49AC3C2224969300302E54 /* OrangeRoundedButton.swift in Sources */,
 				3A49AC3C2224969300302E54 /* OrangeRoundedButton.swift in Sources */,
 				060D597E224218600013DC27 /* TareaCell.swift in Sources */,
+				395C26ED225E8C7D0084549E /* DetalleTareaViewController.swift in Sources */,
 				3A49AC262224936C00302E54 /* AppDelegate.swift in Sources */,
 				3AC2954D223F1A0000181F57 /* AgendarReunionViewController.swift in Sources */,
 				060D596D2241CE7C0013DC27 /* EquipoCell.swift in Sources */,
