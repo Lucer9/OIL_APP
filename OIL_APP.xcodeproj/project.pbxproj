@@ -17,6 +17,7 @@
 		060D597C22420A230013DC27 /* TareasRealizadasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060D597B22420A230013DC27 /* TareasRealizadasViewController.swift */; };
 		060D597E224218600013DC27 /* TareaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060D597D224218600013DC27 /* TareaCell.swift */; };
 		060D5980224219010013DC27 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060D597F224219010013DC27 /* UIColor.swift */; };
+		39C3AD93225E942100251C04 /* KeyboardUIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C3AD92225E942100251C04 /* KeyboardUIController.swift */; };
 		3A49AC262224936C00302E54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49AC252224936C00302E54 /* AppDelegate.swift */; };
 		3A49AC322224936E00302E54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A49AC302224936E00302E54 /* LaunchScreen.storyboard */; };
 		3A49AC3C2224969300302E54 /* OrangeRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49AC3B2224969300302E54 /* OrangeRoundedButton.swift */; };
@@ -39,6 +40,7 @@
 		060D597B22420A230013DC27 /* TareasRealizadasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TareasRealizadasViewController.swift; sourceTree = "<group>"; };
 		060D597D224218600013DC27 /* TareaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TareaCell.swift; sourceTree = "<group>"; };
 		060D597F224219010013DC27 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		39C3AD92225E942100251C04 /* KeyboardUIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardUIController.swift; sourceTree = "<group>"; };
 		3A49AC222224936C00302E54 /* OIL_APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OIL_APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A49AC252224936C00302E54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A49AC312224936E00302E54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 		3A49AC192224936C00302E54 = {
 			isa = PBXGroup;
 			children = (
+				39C3AD92225E942100251C04 /* KeyboardUIController.swift */,
 				3A49AC242224936C00302E54 /* OIL_APP */,
 				3A49AC232224936C00302E54 /* Products */,
 			);
@@ -211,6 +214,7 @@
 				060D597E224218600013DC27 /* TareaCell.swift in Sources */,
 				3A49AC262224936C00302E54 /* AppDelegate.swift in Sources */,
 				3AC2954D223F1A0000181F57 /* AgendarReunionViewController.swift in Sources */,
+				39C3AD93225E942100251C04 /* KeyboardUIController.swift in Sources */,
 				060D596D2241CE7C0013DC27 /* EquipoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,7 +354,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WS56L8DHRF;
+				DEVELOPMENT_TEAM = Z7T452MF6T;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = OIL_APP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -367,7 +371,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WS56L8DHRF;
+				DEVELOPMENT_TEAM = Z7T452MF6T;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = OIL_APP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
