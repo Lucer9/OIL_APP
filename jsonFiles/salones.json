@@ -3,8 +3,8 @@
         "salon": "101",
         "nombre": "Cabina de Control",
         "horario": "Lunes a viernes de 7:00 a 22:00",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/101Panono%20-%20Cabina%20de%20control.jpg",
-        "gear360": "http://199.233.252.86/201811/images/CEDETEC/101Gear.JPG",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/101Panono%20-%20Cabina%20de%20control.jpg",
+        "gear360": "http://martinmolina.com.mx/201911/imagesCDT/101Gear.JPG",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -37,7 +37,7 @@
             "Material relacionado con producción televisiva y de audio. Medios de comunicación"
         ],
         "correoResponsable": "mfernand@itesm.mx",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/101Panono%20-%20Estudio%20de%20tv.jpg",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/101Panono%20-%20Estudio%20de%20tv.jpg",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -69,7 +69,7 @@
         ],
         "correoResponsable": "pedro.ponce@itesm.mx",
         "descripcion": "Laboratorio avnzado de redes eléctricas y simulación en tiempo real",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/102Panono%20-%20Investigacion%20e%20innovacion%20de%20productos.jpg",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/102Panono%20-%20Investigacion%20e%20innovacion%20de%20productos.jpg",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -103,8 +103,8 @@
         ],
         "correoResponsable": "eduardo.corona@itesm.mx",
         "descripcion": "En el laboratorio de CNC se consolidan conocimientos adquiridos de la materia de prototipaje computarizado llegando a la parte creativa, en donde surgen las necesidades de realizar piezas con geometrías complejas de diferentes materiales, donde solo en un laboratorio de control numérico computarizado se podrían realizar, el laboratorio cuenta con un torno CNC y un centro de maquinado vertical (fresadora CNC). El objetivo del laboratorio es realizar piezas con geometrías simétricas en torno CNC o con mayor complejidad el cual se cubre la necesidad con un centro de maquinado vertical. Estos equipos son utilizados una vez que integran la parte teórica y práctica acompañados de los diferentes sofware que deben conocer para el correcto uso del equipo.",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/103Panono%20-%20Control%20numerico.jpg",
-        "gear360": "http://199.233.252.86/201811/images/CEDETEC/103Gear.JPG",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/103Panono%20-%20Control%20numerico.jpg",
+        "gear360": "http://martinmolina.com.mx/201911/imagesCDT/103Gear.JPG",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -137,7 +137,7 @@
         ],
         "correoResponsable": "samuel.olmedo@itesm.mx",
         "descripcion": "Dan clases de dibujo al desnudo y de exploración de la forma. Usualmente está ocupado porque hay talleres de juegos de rol y clases de guitarra.",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/103APanono%20-%20Salon%20de%20dibujo%20y%20escultura.jpg",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/103APanono%20-%20Salon%20de%20dibujo%20y%20escultura.jpg",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -183,8 +183,8 @@
         ],
         "correoResponsable": "eduardo.corona@itesm.mx",
         "descripcion": "En este laboratorio los alumnos pueden desarrollar proyectos relacionados con el maquinado de piezas por arranque de viruta ya que cuenta con máquinas herramientas como tornos, taladros fresadores y fresadoras. Además de desarrollar estructuras de acero o aluminio para productos como carros de servicio, bicicletas, velocípedos, etc. También pueden formar parte de alguna de las escuderías tales como BAJA SAE, Electraton y/ó Shell. Además, este laboratorio cuenta con una Maquina Universal para realizar ensayos de tracción, compresión y flexión a materiales como acero y aluminio",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/104Panono%20-%20Taller%20de%20mecanica.jpg",
-        "gear360": "http://199.233.252.86/201811/images/CEDETEC/104Gear.JPG",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/104Panono%20-%20Taller%20de%20mecanica.jpg",
+        "gear360": "http://martinmolina.com.mx/201911/imagesCDT/104Gear.JPG",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -210,7 +210,7 @@
         "nombre": "Router CNC",
         "horario": "Lunes a viernes de 7:00 a 22:00",
         "correoResponsable": "eduardo.corona@itesm.mx",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/104BPanono%20-%20Router%20CNC.jpg",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/104BPanono%20-%20Router%20CNC.jpg",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -245,8 +245,8 @@
         ],
         "correoResponsable": "eduardo.corona@itesm.mx",
         "descripcion": "En el laboratorio de la Celda de Manufactura se consolidan conocimientos adquiridos en las materias de las carreras de ingeniería en Mecatrónica e ingeniería industrial, llegando a la parte creativa, en donde surgen las necesidades de realizar piezas con geometrías complejas y específicas en material de aluminio que permitan una secuencia de procesos para cada equipo que integra el laboratorio de la celda de manufactura; el laboratorio cuenta con un torno CNC, un centro de maquinado vertical (fresadora CNC) y dos robots industriales fanuc. El objetivo del laboratorio es realizar piezas con geometrías simétricas en torno CNC y con mayor complejidad el cual se cubre la necesidad con un centro de maquinado vertical teniendo comunicación con ambos robots, de manera que en el proceso no se intervenga en su operación. Estos equipos son utilizados una vez que integran la parte teórica y práctica acompañados de los diferentes sofware que deben conocer para el correcto uso de los equipos.",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/105Panono.jpg",
-        "gear360": "http://199.233.252.86/201811/images/CEDETEC/105Gear.JPG",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/105Panono.jpg",
+        "gear360": "http://martinmolina.com.mx/201911/imagesCDT/105Gear.JPG",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -277,8 +277,8 @@
         ],
         "correoResponsable": "eduardo.corona@itesm.mx",
         "descripcion": "En esta sala de computó se concentra todo el software especializado en programación, análisis de estructuras y diseño para todos los usuarios.",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/105APanono%20-%20Sala%20de%20computo%201.jpg",
-        "gear360": "http://199.233.252.86/201811/images/CEDETEC/105aGear.JPG",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/105APanono%20-%20Sala%20de%20computo%201.jpg",
+        "gear360": "http://martinmolina.com.mx/201911/imagesCDT/105aGear.JPG",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -313,7 +313,7 @@
         ],
         "correoResponsable": "eduardo.corona@itesm.mxmahernandezm@itesm.mx",
         "descripcion": "Se trabaja en proyectos sociales, de robótica, comunicación, ingeniería, desarrollo de tecnología, investigación y se encargan de Get Up Tec",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/106Panono%20-%20Materiales%20y%20fundicion.jpg",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/106Panono%20-%20Materiales%20y%20fundicion.jpg",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -355,8 +355,8 @@
         ],
         "correoResponsable": "eduardo.corona@itesm.mx",
         "descripcion": "En el área de energías renovables, se realizan simulaciónes de monitoreo de la generación, transmisión y consumo de energías alternas como la eolica y solar. En el área de fundición, los alumnos pueden realizar prácticas relacionadas con la metalografía de los materiales y sus tratamientos térmicos ya que cuenta con pulidoras, microscopios para metalografía y  muflas que alcanzan los 1000 °C.",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/106APanono%20-%20Energias%20renovables%20y%20fundicion%20B.jpg",
-        "gear360": "http://199.233.252.86/201811/images/CEDETEC/106aGear.JPG",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/106APanono%20-%20Energias%20renovables%20y%20fundicion%20B.jpg",
+        "gear360": "http://martinmolina.com.mx/201911/imagesCDT/106aGear.JPG",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -385,8 +385,8 @@
         "equipamiento": [],
         "correoResponsable": "eduardo.corona@itesm.mx",
         "descripcion": "Laboratorio sin equipo y NO disponible; temporalmente se apoya con el espacio al equipo Nautilus de Preparatoria.",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/106BPanono.jpg",
-        "gear360": "http://199.233.252.86/201811/images/CEDETEC/106bGear.JPG",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/106BPanono.jpg",
+        "gear360": "http://martinmolina.com.mx/201911/imagesCDT/106bGear.JPG",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -448,8 +448,8 @@
         ],
         "correoResponsable": "eduardo.corona@itesm.mx",
         "descripcion": "En el área de Termofluidos se realizan prácticas para el análisis y demostración de los Fenómenos de Transporte (Mecánica de Fluidos, Transferencia de Calor y Transferencia de Masa) y la Termodinámica, así como otras disciplinas de carácter práctico, tales como Calefacción, Ventilación, Aire Acondicionado, Cambiadores de Calor, Combustión, etc. Desarrolla proyectos de investigación básica y aplicada relacionados con dichas disciplinas.En el área de IDS, se realizan simulaciónes de monitoreo de la generación, transmisión y consumo de energía eléctrica por medio de un sistema de transmisión inteligente (smartgrid).",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/107Panono%20-%20Termofluidos%20y%20desarrollo%20sustentable.jpg",
-        "gear360": "http://199.233.252.86/201811/images/CEDETEC/107Gear.JPG",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/107Panono%20-%20Termofluidos%20y%20desarrollo%20sustentable.jpg",
+        "gear360": "http://martinmolina.com.mx/201911/imagesCDT/107Gear.JPG",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -481,8 +481,8 @@
         ],
         "correoResponsable": "eduardo.corona@itesm.mx",
         "descripcion": "Este laboratorio es un espacio compartido para dos áreas, el de Automatización y el de impresión 3D. En el de automatización se consolidan los conocimientos en programación y automatización en plc's, realizando programas completos de ensamble, simulando procesos reales en un sitema de producción en linea a escala. aquí Se realizan los proyectos de redes industriales. El área de impresoras 3D (maker sapce), está abierto a los alumnos que cursan materias de dibujo computarizado para llevar cabo la impresión de sus diseños y algunos casos de sus proyectos.",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/108Panono%20-%20Maker%20space%20iid.jpg",
-        "gear360": "http://199.233.252.86/201811/images/CEDETEC/108Gear.JPG",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/108Panono%20-%20Maker%20space%20iid.jpg",
+        "gear360": "http://martinmolina.com.mx/201911/imagesCDT/108Gear.JPG",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -538,8 +538,8 @@
         ],
         "correoResponsable": "eduardo.corona@itesm.mx",
         "descripcion": "En este laboratorio los alumnos realizan actividades enfocadas en su especialización y utilizan nuevos dispositivos electrónicos y robóticos, para crear soluciones, la programación de robots es una actividad continua con nuevos retos en cuanto a programación.",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/109Panono%20-%20Robotica.jpg",
-        "gear360": "http://199.233.252.86/201811/images/CEDETEC/109Gear.JPG",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/109Panono%20-%20Robotica.jpg",
+        "gear360": "http://martinmolina.com.mx/201911/imagesCDT/109Gear.JPG",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -594,8 +594,8 @@
         ],
         "correoResponsable": "carosas@itesm.mx",
         "descripcion": "En esta sala de computó se concentra todo el software especializado en programación, análisis de estructuras y diseño para todos los usuarios.",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/111Panono%20-%20Sala%20de%20computo%202.jpg",
-        "gear360": "http://199.233.252.86/201811/images/CEDETEC/111Gear.JPG",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/111Panono%20-%20Sala%20de%20computo%202.jpg",
+        "gear360": "http://martinmolina.com.mx/201911/imagesCDT/111Gear.JPG",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -626,8 +626,8 @@
         ],
         "correoResponsable": "carosas@itesm.mx",
         "descripcion": "En esta sala de computó se concentra todo el software especializado en programación, análisis de estructuras y diseño para todos los usuarios.",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/112Panono%20-%20Sala%20de%20computo%203.jpg",
-        "gear360": "http://199.233.252.86/201811/images/CEDETEC/112Gear.JPG",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/112Panono%20-%20Sala%20de%20computo%203.jpg",
+        "gear360": "http://martinmolina.com.mx/201911/imagesCDT/112Gear.JPG",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -711,8 +711,8 @@
         ],
         "correoResponsable": "e.hinojosa@itesm.mx",
         "descripcion": "Se cuenta con diferentes tipos de impresora, mencionados en las casillas anteriores.",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/Panono%20-%20Impresoras%203D.jpg",
-        "gear360": "http://199.233.252.86/201811/images/CEDETEC/114Gear.JPG",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/Panono%20-%20Impresoras%203D.jpg",
+        "gear360": "http://martinmolina.com.mx/201911/imagesCDT/114Gear.JPG",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -735,7 +735,7 @@
     },
     {
         "salon": "115",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/115Panono.jpg",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/115Panono.jpg",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -785,8 +785,8 @@
         "equipamiento": [
             "Butacas"
         ],
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/201-1_Panono.jpg",
-        "gear360": "http://199.233.252.86/201811/images/CEDETEC/201Gear.JPG",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/201-1_Panono.jpg",
+        "gear360": "http://martinmolina.com.mx/201911/imagesCDT/201Gear.JPG",
         "alumnoNombre": "Luis Juan",
         "alumnoMatricula": "A01650501",
         "video": [
@@ -818,8 +818,8 @@
             "Impresoras"
         ],
         "descripcion": "No es laboratorio. Aquí está la gente que opera servicios escolares, servicio social, programas internacionales y centro de apoyos director de departamento",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/202-1_Panono.jpg",
-        "gear360": "http://199.233.252.86/201811/images/CEDETEC/202Gear.JPG",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/202-1_Panono.jpg",
+        "gear360": "http://martinmolina.com.mx/201911/imagesCDT/202Gear.JPG",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -852,8 +852,8 @@
         ],
         "correoResponsable": "miguel.sotelo@itesm.mx",
         "descripcion": "Estudioo de grabación; grabación de voz; preproduccióon y postproducción de doblaje con video.",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/203-1_Panono.jpg",
-        "gear360": "http://199.233.252.86/201811/images/CEDETEC/203Gear.JPG",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/203-1_Panono.jpg",
+        "gear360": "http://martinmolina.com.mx/201911/imagesCDT/203Gear.JPG",
         "alumnoNombre": "Patricia Dávila ",
         "alumnoMatricula": "A01650812",
         "video": [
@@ -886,7 +886,7 @@
         ],
         "correoResponsable": "carosas@itesm.mx",
         "descripcion": "Actualmente se usa para Semestre i",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/204Panono%20-%20Periodismo%20digital.jpg",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/204Panono%20-%20Periodismo%20digital.jpg",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -911,7 +911,7 @@
         "salon": "205",
         "nombre": "Escuela de arquitectura, arte y diseño",
         "descripcion": "Espacio de directores de la escuela de Arquitectura, Arte y Diseño. También se encuentran algunos correoResponsables de laboratorios de esta área",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/205Panono%20-%20Escuela%20de%20arq%20y%20dise%C3%B1o.jpg",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/205Panono%20-%20Escuela%20de%20arq%20y%20dise%C3%B1o.jpg",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -962,7 +962,7 @@
         "salon": "205",
         "nombre": "Soporte de impresión y fotografía ",
         "correoResponsable": "jfemat@itesm.mx",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/Panono%20-%20Soporte%20de%20impresion%20y%20fotografia.jpg",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/Panono%20-%20Soporte%20de%20impresion%20y%20fotografia.jpg",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -993,8 +993,8 @@
         ],
         "correoResponsable": "carosas@itesm.mx",
         "descripcion": "Laboratorio especializado utilizado por alumnos de ingenierías y escuela de Arquitectura, Arte y Diseño. Abierto a los alumnos.",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/205A-1_Panono.jpg",
-        "gear360": "http://199.233.252.86/201811/images/CEDETEC/205aGear.JPG",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/205A-1_Panono.jpg",
+        "gear360": "http://martinmolina.com.mx/201911/imagesCDT/205aGear.JPG",
         "alumnoNombre": "Ana Sollano",
         "alumnoMatricula": "A01651072",
         "video": [
@@ -1027,8 +1027,8 @@
         ],
         "correoResponsable": "carosas@itesm.mx",
         "descripcion": "Laboratorio especializado utilizado por alumnos de ingenierías y escuela de Arquitectura, Arte y Diseño. Abierto a los alumnos.",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/205B-1_Panono.jpg",
-        "gear360": "http://199.233.252.86/201811/images/CEDETEC/205bGear.JPG",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/205B-1_Panono.jpg",
+        "gear360": "http://martinmolina.com.mx/201911/imagesCDT/205bGear.JPG",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -1059,7 +1059,7 @@
         ],
         "correoResponsable": "carosas@itesm.mx",
         "descripcion": "Laboratorio especializado utilizado por alumnos de ingenierías y escuela de Arquitectura, Arte y Diseño. Abierto a los alumnos.",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/205C-1_Panono.jpg",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/205C-1_Panono.jpg",
         "alumnoNombre": "Martín",
         "alumnoMatricula": "A01651073",
         "video": [
@@ -1098,8 +1098,8 @@
         ],
         "descripcion": "Dibujo tradicional o digital",
         "correoResponsable": "samuel.olmedo@itesm.mx",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/206-1_Panono.jpg",
-        "gear360": "http://199.233.252.86/201811/images/CEDETEC/206Gear.JPG",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/206-1_Panono.jpg",
+        "gear360": "http://martinmolina.com.mx/201911/imagesCDT/206Gear.JPG",
         "alumnoNombre": "Manuel Avalos (con Anna)",
         "alumnoMatricula": "A01336176",
         "video": [
@@ -1136,8 +1136,8 @@
         ],
         "correoResponsable": "samuel.olmedo@itesm.mxjfemat@itesm.mx",
         "descripcion": "Salón de captura de movimiento y estudio fotográfico",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/207Panono%20-%20Estudio%20fotografico.jpg",
-        "gear360": "http://199.233.252.86/201811/images/CEDETEC/207Gear.JPG",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/207Panono%20-%20Estudio%20fotografico.jpg",
+        "gear360": "http://martinmolina.com.mx/201911/imagesCDT/207Gear.JPG",
         "alumnoNombre": "Bruno Schalch García",
         "alumnoMatricula": "A01651187",
         "video": [
@@ -1170,7 +1170,7 @@
         ],
         "correoResponsable": "carosas@itesm.mx",
         "descripcion": "En esta sala de computó se concentra todo el software especializado en programación, análisis de estructuras y diseño para todos los usuarios.",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/209Panono%20-%20Sala%20de%20computo%209.jpg",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/209Panono%20-%20Sala%20de%20computo%209.jpg",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -1201,8 +1201,8 @@
         ],
         "correoResponsable": "carosas@itesm.mx",
         "descripcion": "En esta sala de computó se concentra todo el software especializado en programación, análisis de estructuras y diseño para todos los usuarios.",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/208-1_Panono.jpg",
-        "gear360": "http://199.233.252.86/201811/images/CEDETEC/208Gear.JPG",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/208-1_Panono.jpg",
+        "gear360": "http://martinmolina.com.mx/201911/imagesCDT/208Gear.JPG",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -1234,8 +1234,8 @@
             "Contpaq y software para economía y finanzas"
         ],
         "descripcion": "Se dan algunos talleres pero en su mayoría es para los alumnos de semestre i",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/210-1_Panono.jpg",
-        "gear360": "http://199.233.252.86/201811/images/CEDETEC/210Gear.JPG",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/210-1_Panono.jpg",
+        "gear360": "http://martinmolina.com.mx/201911/imagesCDT/210Gear.JPG",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -1259,7 +1259,7 @@
     {
         "salon": "211",
         "nombre": "Conducta humana",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/211Panono%20-%20Conducta%20humana.jpg",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/211Panono%20-%20Conducta%20humana.jpg",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -1308,7 +1308,7 @@
     {
         "salon": "NA",
         "nombre": "Sistemas mecatronicos e innovación de productos",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/Panono%20-%20Sistemas%20mecatronicos.jpg",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/Panono%20-%20Sistemas%20mecatronicos.jpg",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -1332,7 +1332,7 @@
     {
         "salon": "NA",
         "nombre": "Vicepresidencia de relaciones y desarrollo",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/Panono%20-%20Vicepresidencia%20de%20relaciones.jpg",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/Panono%20-%20Vicepresidencia%20de%20relaciones.jpg",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -1385,9 +1385,9 @@
         ],
         "correoResponsable": "mfernand@itesm.mx",
         "descripcion": "estudios de comportamiento de mercadotecnia",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/301Panono%20-%20Camara%20de%20Gessel.jpg",
-        "gear360": "http://199.233.252.86/201811/images/CEDETEC/301Gear.JPG",
-        "panomo1": "http://199.233.252.86/201811/images/CEDETEC/301-1_Panono.jpg",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/301Panono%20-%20Camara%20de%20Gessel.jpg",
+        "gear360": "http://martinmolina.com.mx/201911/imagesCDT/301Gear.JPG",
+        "panomo1": "http://martinmolina.com.mx/201911/imagesCDT/301-1_Panono.jpg",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -1415,9 +1415,9 @@
         "palabrasClave": "Profesores, directores, área",
         "correoResponsable": "hugo.elizalde@itesm.mx",
         "descripcion": "Área de profesores y directores",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/302Panono%20-%20Escuela%20de%20ingenieria%20y%20ciencias.jpg",
-        "gear360": "http://199.233.252.86/201811/images/CEDETEC/302Gear.JPG",
-        "panomo1": "http://199.233.252.86/201811/images/CEDETEC/302-1_Panono.jpg",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/302Panono%20-%20Escuela%20de%20ingenieria%20y%20ciencias.jpg",
+        "gear360": "http://martinmolina.com.mx/201911/imagesCDT/302Gear.JPG",
+        "panomo1": "http://martinmolina.com.mx/201911/imagesCDT/302-1_Panono.jpg",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -1450,9 +1450,9 @@
         ],
         "correoResponsable": "samuel.olmedo@itesm.mx",
         "descripcion": "Arte digital: modelado, dibujo",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/303Panono%20-%20Humanidades%20digitales.jpg",
-        "gear360": "http://199.233.252.86/201811/images/CEDETEC/303Gear.JPG",
-        "panomo1": "http://199.233.252.86/201811/images/CEDETEC/303-1_Panono.jpg",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/303Panono%20-%20Humanidades%20digitales.jpg",
+        "gear360": "http://martinmolina.com.mx/201911/imagesCDT/303Gear.JPG",
+        "panomo1": "http://martinmolina.com.mx/201911/imagesCDT/303-1_Panono.jpg",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -1476,8 +1476,8 @@
     {
         "salon": "304",
         "nombre": "Centro de investigación en microsistemas y biodiseño",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/304Panono%20-%20Centro%20de%20investigacion%20en%20microsisteas%20y%20biodise%C3%B1o.jpg",
-        "gear360": "http://199.233.252.86/201811/images/CEDETEC/304Gear.JPG",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/304Panono%20-%20Centro%20de%20investigacion%20en%20microsisteas%20y%20biodise%C3%B1o.jpg",
+        "gear360": "http://martinmolina.com.mx/201911/imagesCDT/304Gear.JPG",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -1535,8 +1535,8 @@
         ],
         "correoResponsable": "eduardo.corona@itesm.mx",
         "descripcion": "Utilizando programas como Labview y Matlab se realiza control de sistemas apoyándose en tarjetas de adquisición de datos y se utiliza la electrónica para controlar ya sea desde un motor hasta un brazo robótico ",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/305APanono%20-%20Control%20y%20Robotica.jpg",
-        "panomo1": "http://199.233.252.86/201811/images/CEDETEC/305A-1_Panono.jpg",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/305APanono%20-%20Control%20y%20Robotica.jpg",
+        "panomo1": "http://martinmolina.com.mx/201911/imagesCDT/305A-1_Panono.jpg",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -1578,8 +1578,8 @@
         ],
         "correoResponsable": "eduardo.corona@itesm.mx",
         "descripcion": "En este laboratorio se realizan prácticas enfocadas a procesos industriales. Se realizan prácticas donde se programan y controlan procesos utilizando PLCs y sistemas neumáticos, así como la interconexión de los procesos por medio de las redes de comunicación",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/305BPanono%20-%20Automatizacion%20y%20redes%20industriales.jpg",
-        "panomo1": "http://199.233.252.86/201811/images/CEDETEC/305B-1_Panono.jpg",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/305BPanono%20-%20Automatizacion%20y%20redes%20industriales.jpg",
+        "panomo1": "http://martinmolina.com.mx/201911/imagesCDT/305B-1_Panono.jpg",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -1612,9 +1612,9 @@
         ],
         "correoResponsable": "eduardo.corona@itesm.mx",
         "descripcion": "En este laboratorio se les proporciona a los alumnos equipos y espacio para trabajar de forma libre, es un laboratorio en donde no se imparten clases y está destinado  para apoyar a los alumnos a sus prácticas y proyectos pendientes.",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/305CPanono%20-%20Proyectos.jpg",
-        "gear360": "http://199.233.252.86/201811/images/CEDETEC/305cGear.JPG",
-        "panomo1": "http://199.233.252.86/201811/images/CEDETEC/305C-1_Panono.jpg",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/305CPanono%20-%20Proyectos.jpg",
+        "gear360": "http://martinmolina.com.mx/201911/imagesCDT/305cGear.JPG",
+        "panomo1": "http://martinmolina.com.mx/201911/imagesCDT/305C-1_Panono.jpg",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -1649,8 +1649,8 @@
         ],
         "correoResponsable": "eduardo.corona@itesm.mx",
         "descripcion": "En este laboratorio se realizan prácticas de electrónica donde los alumnos trabajan con tarjetas de desarrollo así como microcontroladores y diferentes dispositivos lógicos, se utilizan osciloscopios generadores de señal y fuentes de alimentación para  desarrollar dispositivos  electrónicos digitales.",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/305DPanono%20-%20Electronica%20digital.jpg",
-        "panomo1": "http://199.233.252.86/201811/images/CEDETEC/305D-1_Panono.jpg",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/305DPanono%20-%20Electronica%20digital.jpg",
+        "panomo1": "http://martinmolina.com.mx/201911/imagesCDT/305D-1_Panono.jpg",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -1685,8 +1685,8 @@
         ],
         "correoResponsable": "eduardo.corona@itesm.mx",
         "descripcion": " En este laboratorio se realizan prácticas en donde se analizan sensores y actuadores así como  el aprendizaje de la instrumentación que  todo ingeniero debe aprender, los alumnos aprenden a utilizar multímetro, generador de señales, Osciloscopios, wattmetros, etc ",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/305EPanono%20-%20Instrumentacion.jpg",
-        "panomo1": "http://199.233.252.86/201811/images/CEDETEC/305E-1_Panono.jpg",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/305EPanono%20-%20Instrumentacion.jpg",
+        "panomo1": "http://martinmolina.com.mx/201911/imagesCDT/305E-1_Panono.jpg",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -1721,8 +1721,8 @@
         ],
         "correoResponsable": "eduardo.corona@itesm.mx",
         "descripcion": "En el área de electrónica, los alumnos aprenden a utilizar diferentes tecnologías de comunicación, utilizando equipos como son el analizador de espectros, el generador de RF y diferentes sistemas de radiofrecuencia, ocupan osciloscopios y generadores de banda ancha para poder analizar las señales de comunicación. En el área de biomédica, el alumno utiliza distintos instrumentos de medición para obtener información de los seres vivos, realizan proyectos con la finalidad de ofrecer ayuda funcional o a la sustitución de funciones fisiológicas (prótesis). Se habla, en consecuencia, de instrumentos, o equipos, para diagnóstico y monitorización.",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/305FPanono%20-%20Electronica%20y%20biomedica.jpg",
-        "panomo1": "http://199.233.252.86/201811/images/CEDETEC/305F-1_Panono.jpg",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/305FPanono%20-%20Electronica%20y%20biomedica.jpg",
+        "panomo1": "http://martinmolina.com.mx/201911/imagesCDT/305F-1_Panono.jpg",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -1816,7 +1816,7 @@
         ],
         "correoResponsable": "eduardo.corona@itesm.mx",
         "descripcion": " En este laboratorio se realizan análisis cuantitativos y cualitativos de la energía con distintos tipos de carga como, transformadores, motores, generadores y frenos, aquí se consolidan los conocimientos teóricos, se realizan prácticas en donde se monitorea la generación de energía, control y conexión de diferentes tipos de motores así como los medios de transmisión.",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/305HPanono%20-%20Conversion%20de%20energia.jpg",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/305HPanono%20-%20Conversion%20de%20energia.jpg",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -1847,7 +1847,7 @@
         ],
         "correoResponsable": "carosas@itesm.mx",
         "descripcion": "En esta sala de computó se concentra todo el software especializado en programación, análisis de estructuras y diseño para todos los usuarios.",
-        "gear360": "http://199.233.252.86/201811/images/CEDETEC/306Gear.JPG",
+        "gear360": "http://martinmolina.com.mx/201911/imagesCDT/306Gear.JPG",
         "alumnoNombre": "Brandon Reyes",
         "alumnoMatricula": "A01335537",
         "video": [
@@ -1880,8 +1880,8 @@
         ],
         "correoResponsable": "carosas@itesm.mx",
         "descripcion": "En esta sala de computó se concentra todo el software especializado en programación, análisis de estructuras y diseño para todos los usuarios.",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/Panono.jpg",
-        "gear360": "http://199.233.252.86/201811/images/CEDETEC/307Gear.JPG",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/Panono.jpg",
+        "gear360": "http://martinmolina.com.mx/201911/imagesCDT/307Gear.JPG",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -1916,8 +1916,8 @@
         ],
         "correoResponsable": "jesus.md232@itesm.mx",
         "descripcion": "Tienen todo el material relacionado con redes e Internet of Things",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/Redes1Panono.jpg",
-        "gear360": "http://199.233.252.86/201811/images/CEDETEC/Redes1Gear.jpg",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/Redes1Panono.jpg",
+        "gear360": "http://martinmolina.com.mx/201911/imagesCDT/Redes1Gear.jpg",
         "alumnoNombre": "Ana Karen",
         "alumnoMatricula": "A01335037",
         "video": [
@@ -1954,8 +1954,8 @@
         ],
         "correoResponsable": "jesus.md232@itesm.mx",
         "descripcion": "Tienen todo el material relacionado con redes e Internet of Things",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/Redes2Panono.jpg",
-        "gear360": "http://199.233.252.86/201811/images/CEDETEC/309Gear.JPG",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/Redes2Panono.jpg",
+        "gear360": "http://martinmolina.com.mx/201911/imagesCDT/309Gear.JPG",
         "alumnoNombre": "Ana Karen",
         "alumnoMatricula": "A01335037",
         "video": [
@@ -2032,7 +2032,7 @@
         ],
         "correoResponsable": "miguel.tellez@itesm.mx",
         "descripcion": "Estas aulas son utilizadas por la escuela de Arquitectura, Arte y Diseño en su mayoría. Se imparten clases de diseño.",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/401APanono%20-%20Aula%20de%20dise%C3%B1o.jpg",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/401APanono%20-%20Aula%20de%20dise%C3%B1o.jpg",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -2063,7 +2063,7 @@
         ],
         "correoResponsable": "miguel.tellez@itesm.mx",
         "descripcion": "Estas aulas son utilizadas por la escuela de Arquitectura, Arte y Diseño en su mayoría. Se imparten clases de diseño.",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/401BPanono%20-%20Aula%20de%20dise%C3%B1o.jpg",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/401BPanono%20-%20Aula%20de%20dise%C3%B1o.jpg",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -2124,7 +2124,7 @@
         ],
         "correoResponsable": "miguel.tellez@itesm.mx",
         "descripcion": "Estas aulas son utilizadas por la escuela de Arquitectura, Arte y Diseño en su mayoría. Se imparten clases de diseño.",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/401DPanono%20-%20aula%20de%20dise%C3%B1o.jpg",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/401DPanono%20-%20aula%20de%20dise%C3%B1o.jpg",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -2228,7 +2228,7 @@
         ],
         "correoResponsable": "larellano@itesm.mx",
         "descripcion": "Se imparte la materia de laboratorio de química que es tronco común para casi todas las ingenierías, no requiere equipo sofisticado, ya que es química básica. ",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/404Panono%20-%20Quimica.jpg",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/404Panono%20-%20Quimica.jpg",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -2291,7 +2291,7 @@
         ],
         "correoResponsable": "e.hinojosa@itesm.mx",
         "descripcion": "Manipulan resinas, acrílicos, cuacho.",
-        "gear360": "http://199.233.252.86/201811/images/CEDETEC/406Gear.JPG",
+        "gear360": "http://martinmolina.com.mx/201911/imagesCDT/406Gear.JPG",
         "alumnoNombre": "Iván",
         "alumnoMatricula": "A01651425",
         "video": [
@@ -2326,8 +2326,8 @@
         ],
         "correoResponsable": "e.hinojosa@itesm.mx",
         "descripcion": "Taller en el que se trabaja todo lo relacionado a la madera. Cuentan con distintas sierras, cortadoras.",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/MaderasPanono.jpg",
-        "gear360": "http://199.233.252.86/201811/images/CEDETEC/MaderasGear.jpg",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/MaderasPanono.jpg",
+        "gear360": "http://martinmolina.com.mx/201911/imagesCDT/MaderasGear.jpg",
         "alumnoNombre": "David",
         "alumnoMatricula": "A01334574",
         "video": [
@@ -2359,8 +2359,8 @@
             "Equipo de cómputo"
         ],
         "descripcion": "En esta sala de computó se concentra todo el software especializado en programación, análisis de estructuras y diseño para todos los usuarios.",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/408Panono%20-%20sala%20de%20computo%209.jpg",
-        "gear360": "http://199.233.252.86/201811/images/CEDETEC/408Gear.JPG",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/408Panono%20-%20sala%20de%20computo%209.jpg",
+        "gear360": "http://martinmolina.com.mx/201911/imagesCDT/408Gear.JPG",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -2391,7 +2391,7 @@
         ],
         "correoResponsable": "carosas@itesm.mx",
         "descripcion": "En esta sala de computó se concentra todo el software especializado en programación, análisis de estructuras y diseño para todos los usuarios.",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/409Panono%20-%20sala%20de%20computo%2010.jpg",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/409Panono%20-%20sala%20de%20computo%2010.jpg",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -2422,8 +2422,8 @@
         ],
         "correoResponsable": "carosas@itesm.mx",
         "descripcion": "En esta sala de computó se concentra todo el software especializado en programación, análisis de estructuras y diseño para todos los usuarios.",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/410Panono%20-%20Sala%20de%20computo%2011.jpg",
-        "gear360": "http://199.233.252.86/201811/images/CEDETEC/410Gear.JPG",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/410Panono%20-%20Sala%20de%20computo%2011.jpg",
+        "gear360": "http://martinmolina.com.mx/201911/imagesCDT/410Gear.JPG",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -2447,7 +2447,7 @@
     {
         "salon": "411",
         "nombre": "Servicios Administrativos ",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/411Panono%20-%20Servicios%20administrativos.jpg",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/411Panono%20-%20Servicios%20administrativos.jpg",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -2478,7 +2478,7 @@
         ],
         "correoResponsable": "miguel.tellez@itesm.mx",
         "descripcion": "Estas aulas son utilizadas por la escuela de Arquitectura, Arte y Diseño en su mayoría. Se imparten clases de diseño.",
-        "gear360": "http://199.233.252.86/201811/images/CEDETEC/412Gear.JPG",
+        "gear360": "http://martinmolina.com.mx/201911/imagesCDT/412Gear.JPG",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -2509,7 +2509,7 @@
         ],
         "correoResponsable": "miguel.tellez@itesm.mx",
         "descripcion": "Estas aulas son utilizadas por la escuela de Arquitectura, Arte y Diseño en su mayoría. Se imparten clases de diseño.",
-        "gear360": "http://199.233.252.86/201811/images/CEDETEC/412aGear.JPG",
+        "gear360": "http://martinmolina.com.mx/201911/imagesCDT/412aGear.JPG",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -2540,8 +2540,8 @@
         ],
         "correoResponsable": "miguel.tellez@itesm.mx",
         "descripcion": "Estas aulas son utilizadas por la escuela de Arquitectura, Arte y Diseño en su mayoría. Se imparten clases de diseño.",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/412BPanono%20-%20aula%20de%20dise%C3%B1o.jpg",
-        "gear360": "http://199.233.252.86/201811/images/CEDETEC/412bGear.JPG",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/412BPanono%20-%20aula%20de%20dise%C3%B1o.jpg",
+        "gear360": "http://martinmolina.com.mx/201911/imagesCDT/412bGear.JPG",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
@@ -2572,8 +2572,8 @@
         ],
         "correoResponsable": "miguel.tellez@itesm.mx",
         "descripcion": "Estas aulas son utilizadas por la escuela de Arquitectura, Arte y Diseño en su mayoría. Se imparten clases de diseño.",
-        "panoramica": "http://199.233.252.86/201811/images/CEDETEC/412CPanono%20-%20aula%20de%20dise%C3%B1o.jpg",
-        "gear360": "http://199.233.252.86/201811/images/CEDETEC/412cGear.JPG",
+        "panoramica": "http://martinmolina.com.mx/201911/imagesCDT/412CPanono%20-%20aula%20de%20dise%C3%B1o.jpg",
+        "gear360": "http://martinmolina.com.mx/201911/imagesCDT/412cGear.JPG",
         "video": [
             "http://techslides.com/demos/sample-videos/small.mp4"
         ],
