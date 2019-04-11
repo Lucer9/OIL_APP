@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bDg-eR-fUP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="abt-Op-wsh">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -1425,17 +1425,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Woods" translatesAutoresizingMaskIntoConstraints="NO" id="xT7-nK-Ibn">
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kdt-Do-gxO">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            </imageView>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </arscnView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="xT7-nK-Ibn" firstAttribute="trailing" secondItem="hCO-Uw-nAf" secondAttribute="trailing" id="Eaa-yP-AGV"/>
-                            <constraint firstItem="xT7-nK-Ibn" firstAttribute="leading" secondItem="hCO-Uw-nAf" secondAttribute="leading" id="SQb-lg-3pw"/>
-                            <constraint firstItem="xT7-nK-Ibn" firstAttribute="bottom" secondItem="hCO-Uw-nAf" secondAttribute="bottom" id="vUA-31-Uo4"/>
-                            <constraint firstItem="xT7-nK-Ibn" firstAttribute="top" secondItem="H4p-nk-3SR" secondAttribute="top" id="xkK-fc-K8E"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hCO-Uw-nAf"/>
                     </view>
                     <navigationItem key="navigationItem" title="Laboratorio CIMB" prompt="CEDETEC | 3Piso" id="s2I-Lx-eZ9">
@@ -1451,10 +1447,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="sceneView" destination="Kdt-Do-gxO" id="KaL-SH-cbI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HU9-ug-vJS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3219" y="-22"/>
+            <point key="canvasLocation" x="3217.5" y="-22.183098591549296"/>
         </scene>
         <!--agendarReunion-->
         <scene sceneID="KD2-wH-r6L">
@@ -1478,10 +1477,6 @@
                                 <color key="textColor" red="0.92122232910000001" green="0.433392942" blue="0.17631673810000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3D" translatesAutoresizingMaskIntoConstraints="NO" id="4P6-qc-Yjk">
-                                <rect key="frame" x="87" y="212" width="147" height="217"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <searchBar contentMode="redraw" fixedFrame="YES" searchBarStyle="minimal" text="CIMB" placeholder="Buscar salon" showsScopeBar="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PVB-89-gB9">
                                 <rect key="frame" x="6" y="131" width="307" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1594,7 +1589,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="3D" width="402" height="446"/>
         <image name="AddTask" width="219" height="380"/>
         <image name="AddTeam" width="216" height="386"/>
         <image name="Bookings" width="20" height="20.5"/>
@@ -1610,7 +1604,6 @@
         <image name="Person" width="24" height="24"/>
         <image name="Ready" width="24" height="24"/>
         <image name="Settings" width="20" height="20"/>
-        <image name="Woods" width="277" height="609"/>
         <image name="fader" width="7" height="10"/>
     </resources>
     <inferredMetricsTieBreakers>
@@ -1618,7 +1611,7 @@
         <segue reference="St7-No-3fp"/>
         <segue reference="pdw-hf-Xrq"/>
         <segue reference="Bwg-xk-B6j"/>
-        <segue reference="iFG-Wh-QRH"/>
+        <segue reference="byT-kU-MVy"/>
         <segue reference="5eF-Dp-Y3o"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -29,6 +29,7 @@
 		3AC2954D223F1A0000181F57 /* AgendarReunionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC2954C223F1A0000181F57 /* AgendarReunionViewController.swift */; };
 		3AD6886E225EC40D008C5E18 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD6886D225EC40D008C5E18 /* ARViewController.swift */; };
 		3AD68872225EC831008C5E18 /* KeyboardUIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD68871225EC831008C5E18 /* KeyboardUIController.swift */; };
+		3ADCF99B225EDA7800D6B628 /* earth-sumner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ADCF99A225EDA7700D6B628 /* earth-sumner.jpg */; };
 		493C746E2243664300B499F3 /* SalonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C746D2243664300B499F3 /* SalonCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		3AC2954C223F1A0000181F57 /* AgendarReunionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendarReunionViewController.swift; sourceTree = "<group>"; };
 		3AD6886D225EC40D008C5E18 /* ARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		3AD68871225EC831008C5E18 /* KeyboardUIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardUIController.swift; sourceTree = "<group>"; };
+		3ADCF99A225EDA7700D6B628 /* earth-sumner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "earth-sumner.jpg"; sourceTree = "<group>"; };
 		493C746D2243664300B499F3 /* SalonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,6 +129,7 @@
 				060D59702241E01C0013DC27 /* MisEquiposViewController.swift */,
 				060D596B2241CDC20013DC27 /* Extensions */,
 				3A529855223F77D40076CF0A /* ListaMaterialTableViewController.swift */,
+				3ADCF99A225EDA7700D6B628 /* earth-sumner.jpg */,
 				3A49AC252224936C00302E54 /* AppDelegate.swift */,
 				3AC2954C223F1A0000181F57 /* AgendarReunionViewController.swift */,
 				3AD68871225EC831008C5E18 /* KeyboardUIController.swift */,
@@ -204,6 +207,7 @@
 			files = (
 				3A49AC322224936E00302E54 /* LaunchScreen.storyboard in Resources */,
 				3A529854223F719D0076CF0A /* Assets.xcassets in Resources */,
+				3ADCF99B225EDA7800D6B628 /* earth-sumner.jpg in Resources */,
 				3A59D1982242D320004118DF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
