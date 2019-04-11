@@ -27,6 +27,7 @@
 		3A59D1982242D320004118DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A59D1972242D320004118DF /* Main.storyboard */; };
 		3A59D19A2242EABE004118DF /* AcercaDeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A59D1992242EABE004118DF /* AcercaDeViewController.swift */; };
 		3AC2954D223F1A0000181F57 /* AgendarReunionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC2954C223F1A0000181F57 /* AgendarReunionViewController.swift */; };
+		3AD6886E225EC40D008C5E18 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD6886D225EC40D008C5E18 /* ARViewController.swift */; };
 		493C746E2243664300B499F3 /* SalonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C746D2243664300B499F3 /* SalonCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		3A59D1972242D320004118DF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3A59D1992242EABE004118DF /* AcercaDeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcercaDeViewController.swift; sourceTree = "<group>"; };
 		3AC2954C223F1A0000181F57 /* AgendarReunionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendarReunionViewController.swift; sourceTree = "<group>"; };
+		3AD6886D225EC40D008C5E18 /* ARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		493C746D2243664300B499F3 /* SalonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,6 +129,7 @@
 				3AC2954C223F1A0000181F57 /* AgendarReunionViewController.swift */,
 				060D596C2241CE7C0013DC27 /* EquipoCell.swift */,
 				3A49AC3B2224969300302E54 /* OrangeRoundedButton.swift */,
+				3AD6886D225EC40D008C5E18 /* ARViewController.swift */,
 				3A59D1972242D320004118DF /* Main.storyboard */,
 				493C746D2243664300B499F3 /* SalonCell.swift */,
 				3A59D1992242EABE004118DF /* AcercaDeViewController.swift */,
@@ -228,6 +231,7 @@
 				3A49AC262224936C00302E54 /* AppDelegate.swift in Sources */,
 				3AC2954D223F1A0000181F57 /* AgendarReunionViewController.swift in Sources */,
 				060D596D2241CE7C0013DC27 /* EquipoCell.swift in Sources */,
+				3AD6886E225EC40D008C5E18 /* ARViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
