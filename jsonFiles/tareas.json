@@ -1,5 +1,23 @@
 [
     {
+        "reunion": true,
+        "realizada": false,
+        "color": "#FDE2E7FF",
+        "salon": "101",
+        "inicio": 1554935877,
+        "fin": 1554939477,
+        "equipo": "1"
+    },
+    {   
+        "reunion": true,
+        "realizada": false,
+        "color": "#FDE2E7FF",
+        "salon": "102",
+        "inicio": 1554935877,
+        "fin": 1554939477,
+        "equipo": "2"
+    },
+    {
         "realizada": false,
         "color": "#FDE2E7FF",
         "titulo": "Configurar servidor",
