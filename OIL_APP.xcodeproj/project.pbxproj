@@ -28,6 +28,7 @@
 		3A59D19A2242EABE004118DF /* AcercaDeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A59D1992242EABE004118DF /* AcercaDeViewController.swift */; };
 		3AC2954D223F1A0000181F57 /* AgendarReunionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC2954C223F1A0000181F57 /* AgendarReunionViewController.swift */; };
 		3AD6886E225EC40D008C5E18 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD6886D225EC40D008C5E18 /* ARViewController.swift */; };
+		3AD68872225EC831008C5E18 /* KeyboardUIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD68871225EC831008C5E18 /* KeyboardUIController.swift */; };
 		493C746E2243664300B499F3 /* SalonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C746D2243664300B499F3 /* SalonCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		3A59D1992242EABE004118DF /* AcercaDeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcercaDeViewController.swift; sourceTree = "<group>"; };
 		3AC2954C223F1A0000181F57 /* AgendarReunionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendarReunionViewController.swift; sourceTree = "<group>"; };
 		3AD6886D225EC40D008C5E18 /* ARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		3AD68871225EC831008C5E18 /* KeyboardUIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardUIController.swift; sourceTree = "<group>"; };
 		493C746D2243664300B499F3 /* SalonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,6 +129,7 @@
 				3A529855223F77D40076CF0A /* ListaMaterialTableViewController.swift */,
 				3A49AC252224936C00302E54 /* AppDelegate.swift */,
 				3AC2954C223F1A0000181F57 /* AgendarReunionViewController.swift */,
+				3AD68871225EC831008C5E18 /* KeyboardUIController.swift */,
 				060D596C2241CE7C0013DC27 /* EquipoCell.swift */,
 				3A49AC3B2224969300302E54 /* OrangeRoundedButton.swift */,
 				3AD6886D225EC40D008C5E18 /* ARViewController.swift */,
@@ -216,6 +219,7 @@
 				060D5975224206D10013DC27 /* MiEquipoTabBarController.swift in Sources */,
 				060D5977224209920013DC27 /* MisTareasViewController.swift in Sources */,
 				3A529856223F77D40076CF0A /* ListaMaterialTableViewController.swift in Sources */,
+				3AD68872225EC831008C5E18 /* KeyboardUIController.swift in Sources */,
 				060D597A22420A0C0013DC27 /* TareasPendientesViewController.swift in Sources */,
 				060D596A2241CD990013DC27 /* UIImageView.swift in Sources */,
 				060D597C22420A230013DC27 /* TareasRealizadasViewController.swift in Sources */,

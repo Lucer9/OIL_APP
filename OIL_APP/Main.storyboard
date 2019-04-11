@@ -227,10 +227,10 @@
             </objects>
             <point key="canvasLocation" x="625" y="3358"/>
         </scene>
-        <!--View Controller-->
+        <!--KeyboardUI Controller-->
         <scene sceneID="0cF-Wx-UxW">
             <objects>
-                <viewController id="CBi-rd-jCL" sceneMemberID="viewController">
+                <viewController id="CBi-rd-jCL" customClass="KeyboardUIController" customModule="OIL_APP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ckq-8v-PkS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -346,10 +346,10 @@
             </objects>
             <point key="canvasLocation" x="-2645.625" y="-180.63380281690141"/>
         </scene>
-        <!--KeyboardUI View Controller-->
+        <!--KeyboardUI Controller-->
         <scene sceneID="PZS-MS-uft">
             <objects>
-                <viewController id="kRF-Zq-qFq" customClass="KeyboardUIViewController" customModule="OIL_APP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kRF-Zq-qFq" customClass="KeyboardUIController" customModule="OIL_APP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="diF-u7-95s">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -384,7 +384,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Matricula" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CmR-tz-hUY">
-                                <rect key="frame" x="36" y="269" width="248" height="30"/>
+                                <rect key="frame" x="36" y="252" width="248" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -401,7 +401,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B1F-fJ-cVy">
-                                <rect key="frame" x="81" y="83" width="159" height="164"/>
+                                <rect key="frame" x="81" y="71" width="159" height="164"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="Logo"/>
                                 <connections>
@@ -409,7 +409,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PQA-g3-yoL">
-                                <rect key="frame" x="36" y="323" width="248" height="30"/>
+                                <rect key="frame" x="36" y="306" width="248" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -946,10 +946,10 @@
             </objects>
             <point key="canvasLocation" x="4056.8000000000002" y="921.58920539730138"/>
         </scene>
-        <!--View Controller-->
+        <!--KeyboardUI Controller-->
         <scene sceneID="pLT-so-cmb">
             <objects>
-                <viewController id="nwX-AI-ezm" sceneMemberID="viewController">
+                <viewController id="nwX-AI-ezm" customClass="KeyboardUIController" customModule="OIL_APP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UQz-wf-nq1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1085,20 +1085,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Carrete" translatesAutoresizingMaskIntoConstraints="NO" id="req-P3-xEt">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Carrete" translatesAutoresizingMaskIntoConstraints="NO" id="req-P3-xEt">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="req-P3-xEt" secondAttribute="height" multiplier="375:667" id="fEJ-rK-MHB"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="req-P3-xEt" firstAttribute="leading" secondItem="N95-ma-kyd" secondAttribute="leading" id="CRP-01-2jo"/>
-                            <constraint firstItem="req-P3-xEt" firstAttribute="trailing" secondItem="N95-ma-kyd" secondAttribute="trailing" id="FGk-Ll-YI5"/>
-                            <constraint firstItem="req-P3-xEt" firstAttribute="bottom" secondItem="N95-ma-kyd" secondAttribute="bottom" id="OWg-iR-eDy"/>
-                            <constraint firstItem="req-P3-xEt" firstAttribute="top" secondItem="PW1-iy-bXX" secondAttribute="top" id="Pvo-EV-h6w"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="N95-ma-kyd"/>
                     </view>
                     <nil key="simulatedBottomBarMetrics"/>
@@ -1626,7 +1618,7 @@
         <segue reference="St7-No-3fp"/>
         <segue reference="pdw-hf-Xrq"/>
         <segue reference="Bwg-xk-B6j"/>
-        <segue reference="byT-kU-MVy"/>
+        <segue reference="iFG-Wh-QRH"/>
         <segue reference="5eF-Dp-Y3o"/>
     </inferredMetricsTieBreakers>
 </document>
