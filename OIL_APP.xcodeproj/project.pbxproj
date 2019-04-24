@@ -17,7 +17,8 @@
 		060D597C22420A230013DC27 /* TareasRealizadasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060D597B22420A230013DC27 /* TareasRealizadasViewController.swift */; };
 		060D597E224218600013DC27 /* TareaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060D597D224218600013DC27 /* TareaCell.swift */; };
 		060D5980224219010013DC27 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060D597F224219010013DC27 /* UIColor.swift */; };
-		39C3AD93225E942100251C04 /* KeyboardUIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C3AD92225E942100251C04 /* KeyboardUIController.swift */; };
+		395C26EB225E8C550084549E /* DetalleReunionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C26EA225E8C550084549E /* DetalleReunionViewController.swift */; };
+		395C26ED225E8C7D0084549E /* DetalleTareaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C26EC225E8C7D0084549E /* DetalleTareaViewController.swift */; };
 		3A49AC262224936C00302E54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49AC252224936C00302E54 /* AppDelegate.swift */; };
 		3A49AC322224936E00302E54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A49AC302224936E00302E54 /* LaunchScreen.storyboard */; };
 		3A49AC3C2224969300302E54 /* OrangeRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49AC3B2224969300302E54 /* OrangeRoundedButton.swift */; };
@@ -26,6 +27,17 @@
 		3A59D1982242D320004118DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A59D1972242D320004118DF /* Main.storyboard */; };
 		3A59D19A2242EABE004118DF /* AcercaDeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A59D1992242EABE004118DF /* AcercaDeViewController.swift */; };
 		3AC2954D223F1A0000181F57 /* AgendarReunionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC2954C223F1A0000181F57 /* AgendarReunionViewController.swift */; };
+		3AD6886E225EC40D008C5E18 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD6886D225EC40D008C5E18 /* ARViewController.swift */; };
+		3AD68872225EC831008C5E18 /* KeyboardUIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD68871225EC831008C5E18 /* KeyboardUIController.swift */; };
+		3ADCF99B225EDA7800D6B628 /* earth-sumner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ADCF99A225EDA7700D6B628 /* earth-sumner.jpg */; };
+		450A7210225F06BD00B1312A /* MultimediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450A720F225F06BD00B1312A /* MultimediaViewController.swift */; };
+		450A7212225F10B500B1312A /* SalonSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450A7211225F10B500B1312A /* SalonSearchCell.swift */; };
+		45269AC3225F7102001F6701 /* ObjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45269AC2225F7101001F6701 /* ObjectViewController.swift */; };
+		45C9AEA1225F2AF600A94BFE /* ARNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C9AEA0225F2AF600A94BFE /* ARNavigationViewController.swift */; };
+		45C9AEA3225F2EAA00A94BFE /* imagenJSONViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C9AEA2225F2EAA00A94BFE /* imagenJSONViewController.swift */; };
+		45C9AEA6225F377400A94BFE /* Video3DViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C9AEA4225F377300A94BFE /* Video3DViewController.swift */; };
+		45C9AEA7225F377400A94BFE /* VideoARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C9AEA5225F377400A94BFE /* VideoARViewController.swift */; };
+		45C9AEAC225F437A00A94BFE /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C9AEAB225F437A00A94BFE /* SpinnerViewController.swift */; };
 		493C746E2243664300B499F3 /* SalonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C746D2243664300B499F3 /* SalonCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +52,8 @@
 		060D597B22420A230013DC27 /* TareasRealizadasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TareasRealizadasViewController.swift; sourceTree = "<group>"; };
 		060D597D224218600013DC27 /* TareaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TareaCell.swift; sourceTree = "<group>"; };
 		060D597F224219010013DC27 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
-		39C3AD92225E942100251C04 /* KeyboardUIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardUIController.swift; sourceTree = "<group>"; };
+		395C26EA225E8C550084549E /* DetalleReunionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleReunionViewController.swift; sourceTree = "<group>"; };
+		395C26EC225E8C7D0084549E /* DetalleTareaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleTareaViewController.swift; sourceTree = "<group>"; };
 		3A49AC222224936C00302E54 /* OIL_APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OIL_APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A49AC252224936C00302E54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A49AC312224936E00302E54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +64,18 @@
 		3A59D1972242D320004118DF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3A59D1992242EABE004118DF /* AcercaDeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcercaDeViewController.swift; sourceTree = "<group>"; };
 		3AC2954C223F1A0000181F57 /* AgendarReunionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendarReunionViewController.swift; sourceTree = "<group>"; };
+		3AD6886D225EC40D008C5E18 /* ARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		3AD68871225EC831008C5E18 /* KeyboardUIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardUIController.swift; sourceTree = "<group>"; };
+		3ADCF99A225EDA7700D6B628 /* earth-sumner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "earth-sumner.jpg"; sourceTree = "<group>"; };
+		450A720F225F06BD00B1312A /* MultimediaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultimediaViewController.swift; sourceTree = "<group>"; };
+		450A7211225F10B500B1312A /* SalonSearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalonSearchCell.swift; sourceTree = "<group>"; };
+		450A7293225F1B3400B1312A /* modeloEevee.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = modeloEevee.scn; sourceTree = "<group>"; };
+		45269AC2225F7101001F6701 /* ObjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectViewController.swift; sourceTree = "<group>"; };
+		45C9AEA0225F2AF600A94BFE /* ARNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARNavigationViewController.swift; sourceTree = "<group>"; };
+		45C9AEA2225F2EAA00A94BFE /* imagenJSONViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagenJSONViewController.swift; sourceTree = "<group>"; };
+		45C9AEA4225F377300A94BFE /* Video3DViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video3DViewController.swift; sourceTree = "<group>"; };
+		45C9AEA5225F377400A94BFE /* VideoARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoARViewController.swift; sourceTree = "<group>"; };
+		45C9AEAB225F437A00A94BFE /* SpinnerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
 		493C746D2243664300B499F3 /* SalonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,10 +113,18 @@
 			path = MiEquipo;
 			sourceTree = "<group>";
 		};
+		395C26E9225E8C2B0084549E /* DetalleViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				395C26EA225E8C550084549E /* DetalleReunionViewController.swift */,
+				395C26EC225E8C7D0084549E /* DetalleTareaViewController.swift */,
+			);
+			path = DetalleViewControllers;
+			sourceTree = "<group>";
+		};
 		3A49AC192224936C00302E54 = {
 			isa = PBXGroup;
 			children = (
-				39C3AD92225E942100251C04 /* KeyboardUIController.swift */,
 				3A49AC242224936C00302E54 /* OIL_APP */,
 				3A49AC232224936C00302E54 /* Products */,
 			);
@@ -108,22 +141,43 @@
 		3A49AC242224936C00302E54 /* OIL_APP */ = {
 			isa = PBXGroup;
 			children = (
+				45C9AEAA225F435F00A94BFE /* Utils */,
+				395C26E9225E8C2B0084549E /* DetalleViewControllers */,
 				060D5978224209BF0013DC27 /* MiEquipo */,
-				060D59702241E01C0013DC27 /* MisEquiposViewController.swift */,
 				060D596B2241CDC20013DC27 /* Extensions */,
+				060D59702241E01C0013DC27 /* MisEquiposViewController.swift */,
 				3A529855223F77D40076CF0A /* ListaMaterialTableViewController.swift */,
+				45C9AEA2225F2EAA00A94BFE /* imagenJSONViewController.swift */,
 				3A49AC252224936C00302E54 /* AppDelegate.swift */,
+				3ADCF99A225EDA7700D6B628 /* earth-sumner.jpg */,
 				3AC2954C223F1A0000181F57 /* AgendarReunionViewController.swift */,
+				3AD68871225EC831008C5E18 /* KeyboardUIController.swift */,
 				060D596C2241CE7C0013DC27 /* EquipoCell.swift */,
 				3A49AC3B2224969300302E54 /* OrangeRoundedButton.swift */,
+				3AD6886D225EC40D008C5E18 /* ARViewController.swift */,
+				45C9AEA0225F2AF600A94BFE /* ARNavigationViewController.swift */,
 				3A59D1972242D320004118DF /* Main.storyboard */,
+				45C9AEA4225F377300A94BFE /* Video3DViewController.swift */,
+				45C9AEA5225F377400A94BFE /* VideoARViewController.swift */,
 				493C746D2243664300B499F3 /* SalonCell.swift */,
+				450A720F225F06BD00B1312A /* MultimediaViewController.swift */,
 				3A59D1992242EABE004118DF /* AcercaDeViewController.swift */,
+				450A7211225F10B500B1312A /* SalonSearchCell.swift */,
+				45269AC2225F7101001F6701 /* ObjectViewController.swift */,
 				3A49AC302224936E00302E54 /* LaunchScreen.storyboard */,
+				450A7293225F1B3400B1312A /* modeloEevee.scn */,
 				3A49AC332224936E00302E54 /* Info.plist */,
 				3A529853223F719D0076CF0A /* Assets.xcassets */,
 			);
 			path = OIL_APP;
+			sourceTree = "<group>";
+		};
+		45C9AEAA225F435F00A94BFE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				45C9AEAB225F437A00A94BFE /* SpinnerViewController.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +241,7 @@
 			files = (
 				3A49AC322224936E00302E54 /* LaunchScreen.storyboard in Resources */,
 				3A529854223F719D0076CF0A /* Assets.xcassets in Resources */,
+				3ADCF99B225EDA7800D6B628 /* earth-sumner.jpg in Resources */,
 				3A59D1982242D320004118DF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,21 +256,32 @@
 				060D5980224219010013DC27 /* UIColor.swift in Sources */,
 				060D5975224206D10013DC27 /* MiEquipoTabBarController.swift in Sources */,
 				060D5977224209920013DC27 /* MisTareasViewController.swift in Sources */,
+				45C9AEA7225F377400A94BFE /* VideoARViewController.swift in Sources */,
 				3A529856223F77D40076CF0A /* ListaMaterialTableViewController.swift in Sources */,
+				3AD68872225EC831008C5E18 /* KeyboardUIController.swift in Sources */,
+				450A7212225F10B500B1312A /* SalonSearchCell.swift in Sources */,
 				060D597A22420A0C0013DC27 /* TareasPendientesViewController.swift in Sources */,
+				45269AC3225F7102001F6701 /* ObjectViewController.swift in Sources */,
 				060D596A2241CD990013DC27 /* UIImageView.swift in Sources */,
 				060D597C22420A230013DC27 /* TareasRealizadasViewController.swift in Sources */,
 				060D59712241E01C0013DC27 /* MisEquiposViewController.swift in Sources */,
 				493C746E2243664300B499F3 /* SalonCell.swift in Sources */,
+				45C9AEAC225F437A00A94BFE /* SpinnerViewController.swift in Sources */,
+				395C26EB225E8C550084549E /* DetalleReunionViewController.swift in Sources */,
 				3A59D19A2242EABE004118DF /* AcercaDeViewController.swift in Sources */,
 				060D59732241FAC50013DC27 /* UIButton.swift in Sources */,
+				450A7210225F06BD00B1312A /* MultimediaViewController.swift in Sources */,
 				3A49AC3C2224969300302E54 /* OrangeRoundedButton.swift in Sources */,
 				3A49AC3C2224969300302E54 /* OrangeRoundedButton.swift in Sources */,
 				060D597E224218600013DC27 /* TareaCell.swift in Sources */,
+				45C9AEA1225F2AF600A94BFE /* ARNavigationViewController.swift in Sources */,
+				395C26ED225E8C7D0084549E /* DetalleTareaViewController.swift in Sources */,
+				45C9AEA3225F2EAA00A94BFE /* imagenJSONViewController.swift in Sources */,
 				3A49AC262224936C00302E54 /* AppDelegate.swift in Sources */,
 				3AC2954D223F1A0000181F57 /* AgendarReunionViewController.swift in Sources */,
-				39C3AD93225E942100251C04 /* KeyboardUIController.swift in Sources */,
 				060D596D2241CE7C0013DC27 /* EquipoCell.swift in Sources */,
+				3AD6886E225EC40D008C5E18 /* ARViewController.swift in Sources */,
+				45C9AEA6225F377400A94BFE /* Video3DViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
