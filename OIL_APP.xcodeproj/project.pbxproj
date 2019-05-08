@@ -17,8 +17,13 @@
 		060D597C22420A230013DC27 /* TareasRealizadasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060D597B22420A230013DC27 /* TareasRealizadasViewController.swift */; };
 		060D597E224218600013DC27 /* TareaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060D597D224218600013DC27 /* TareaCell.swift */; };
 		060D5980224219010013DC27 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060D597F224219010013DC27 /* UIColor.swift */; };
+		390D037722778E1700AC2C6F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 390D037622778E1700AC2C6F /* GoogleService-Info.plist */; };
+		393CD6B52277D39F00501C82 /* PantallaDeInicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393CD6B42277D39F00501C82 /* PantallaDeInicioViewController.swift */; };
+		393CD6B72277D58D00501C82 /* IniciarSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393CD6B62277D58D00501C82 /* IniciarSesionViewController.swift */; };
 		395C26EB225E8C550084549E /* DetalleReunionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C26EA225E8C550084549E /* DetalleReunionViewController.swift */; };
 		395C26ED225E8C7D0084549E /* DetalleTareaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C26EC225E8C7D0084549E /* DetalleTareaViewController.swift */; };
+		39C676A522779669001FA558 /* RegistrarUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C676A422779669001FA558 /* RegistrarUsuarioViewController.swift */; };
+		39E901B6228368520039924D /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E901B5228368520039924D /* Helper.swift */; };
 		3A49AC262224936C00302E54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49AC252224936C00302E54 /* AppDelegate.swift */; };
 		3A49AC322224936E00302E54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A49AC302224936E00302E54 /* LaunchScreen.storyboard */; };
 		3A49AC3C2224969300302E54 /* OrangeRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49AC3B2224969300302E54 /* OrangeRoundedButton.swift */; };
@@ -26,19 +31,30 @@
 		3A529856223F77D40076CF0A /* ListaMaterialTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A529855223F77D40076CF0A /* ListaMaterialTableViewController.swift */; };
 		3A59D1982242D320004118DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A59D1972242D320004118DF /* Main.storyboard */; };
 		3A59D19A2242EABE004118DF /* AcercaDeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A59D1992242EABE004118DF /* AcercaDeViewController.swift */; };
+		3AA09CA6227AF70400FE7565 /* objetoMarcadorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA09CA5227AF70400FE7565 /* objetoMarcadorViewController.swift */; };
+		3AA09CA8227AFB9D00FE7565 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AA09CA7227AFB9D00FE7565 /* art.scnassets */; };
 		3AC2954D223F1A0000181F57 /* AgendarReunionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC2954C223F1A0000181F57 /* AgendarReunionViewController.swift */; };
 		3AD6886E225EC40D008C5E18 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD6886D225EC40D008C5E18 /* ARViewController.swift */; };
 		3AD68872225EC831008C5E18 /* KeyboardUIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD68871225EC831008C5E18 /* KeyboardUIController.swift */; };
 		3ADCF99B225EDA7800D6B628 /* earth-sumner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ADCF99A225EDA7700D6B628 /* earth-sumner.jpg */; };
+		3AFB3557227A5C0B00A5B1F1 /* UIKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB3556227A5C0A00A5B1F1 /* UIKeyboard.swift */; };
+		3AFB355A227A5C3600A5B1F1 /* NuevaTareaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB3558227A5C3600A5B1F1 /* NuevaTareaViewController.swift */; };
+		3AFB355B227A5C3600A5B1F1 /* BotonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB3559227A5C3600A5B1F1 /* BotonCollectionViewCell.swift */; };
 		450A7210225F06BD00B1312A /* MultimediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450A720F225F06BD00B1312A /* MultimediaViewController.swift */; };
 		450A7212225F10B500B1312A /* SalonSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450A7211225F10B500B1312A /* SalonSearchCell.swift */; };
 		45269AC3225F7102001F6701 /* ObjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45269AC2225F7101001F6701 /* ObjectViewController.swift */; };
+		456A5909325519F6F9FC1DED /* Pods_OIL_APP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D9649864D713B294384787 /* Pods_OIL_APP.framework */; };
 		45C9AEA1225F2AF600A94BFE /* ARNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C9AEA0225F2AF600A94BFE /* ARNavigationViewController.swift */; };
 		45C9AEA3225F2EAA00A94BFE /* imagenJSONViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C9AEA2225F2EAA00A94BFE /* imagenJSONViewController.swift */; };
 		45C9AEA6225F377400A94BFE /* Video3DViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C9AEA4225F377300A94BFE /* Video3DViewController.swift */; };
 		45C9AEA7225F377400A94BFE /* VideoARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C9AEA5225F377400A94BFE /* VideoARViewController.swift */; };
 		45C9AEAC225F437A00A94BFE /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C9AEAB225F437A00A94BFE /* SpinnerViewController.swift */; };
 		493C746E2243664300B499F3 /* SalonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C746D2243664300B499F3 /* SalonCell.swift */; };
+		4959F0C6227A88DA00320E8A /* NuevoEquipoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4959F0C5227A88DA00320E8A /* NuevoEquipoViewController.swift */; };
+		4959F0C9227A91CC00320E8A /* NuevoEquipoIntegranteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4959F0C8227A91CC00320E8A /* NuevoEquipoIntegranteTableViewCell.swift */; };
+		4959F0CE227ABD3C00320E8A /* AsignarTareaIntegrantesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4959F0CD227ABD3C00320E8A /* AsignarTareaIntegrantesTableViewController.swift */; };
+		4959F0D0227ABDDA00320E8A /* AsignarTareaIntegranteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4959F0CF227ABDDA00320E8A /* AsignarTareaIntegranteTableViewCell.swift */; };
+		763593E222793C6400D4BC87 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763593E122793C6400D4BC87 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,8 +68,13 @@
 		060D597B22420A230013DC27 /* TareasRealizadasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TareasRealizadasViewController.swift; sourceTree = "<group>"; };
 		060D597D224218600013DC27 /* TareaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TareaCell.swift; sourceTree = "<group>"; };
 		060D597F224219010013DC27 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		390D037622778E1700AC2C6F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		393CD6B42277D39F00501C82 /* PantallaDeInicioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallaDeInicioViewController.swift; sourceTree = "<group>"; };
+		393CD6B62277D58D00501C82 /* IniciarSesionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IniciarSesionViewController.swift; sourceTree = "<group>"; };
 		395C26EA225E8C550084549E /* DetalleReunionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleReunionViewController.swift; sourceTree = "<group>"; };
 		395C26EC225E8C7D0084549E /* DetalleTareaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleTareaViewController.swift; sourceTree = "<group>"; };
+		39C676A422779669001FA558 /* RegistrarUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarUsuarioViewController.swift; sourceTree = "<group>"; };
+		39E901B5228368520039924D /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		3A49AC222224936C00302E54 /* OIL_APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OIL_APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A49AC252224936C00302E54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A49AC312224936E00302E54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,10 +84,16 @@
 		3A529855223F77D40076CF0A /* ListaMaterialTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaMaterialTableViewController.swift; sourceTree = "<group>"; };
 		3A59D1972242D320004118DF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3A59D1992242EABE004118DF /* AcercaDeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcercaDeViewController.swift; sourceTree = "<group>"; };
+		3AA09CA5227AF70400FE7565 /* objetoMarcadorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = objetoMarcadorViewController.swift; sourceTree = "<group>"; };
+		3AA09CA7227AFB9D00FE7565 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		3AB463CF227B877F0092E44A /* OIL_APP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OIL_APP.entitlements; sourceTree = "<group>"; };
 		3AC2954C223F1A0000181F57 /* AgendarReunionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendarReunionViewController.swift; sourceTree = "<group>"; };
 		3AD6886D225EC40D008C5E18 /* ARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		3AD68871225EC831008C5E18 /* KeyboardUIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardUIController.swift; sourceTree = "<group>"; };
 		3ADCF99A225EDA7700D6B628 /* earth-sumner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "earth-sumner.jpg"; sourceTree = "<group>"; };
+		3AFB3556227A5C0A00A5B1F1 /* UIKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKeyboard.swift; sourceTree = "<group>"; };
+		3AFB3558227A5C3600A5B1F1 /* NuevaTareaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuevaTareaViewController.swift; sourceTree = "<group>"; };
+		3AFB3559227A5C3600A5B1F1 /* BotonCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BotonCollectionViewCell.swift; sourceTree = "<group>"; };
 		450A720F225F06BD00B1312A /* MultimediaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultimediaViewController.swift; sourceTree = "<group>"; };
 		450A7211225F10B500B1312A /* SalonSearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalonSearchCell.swift; sourceTree = "<group>"; };
 		450A7293225F1B3400B1312A /* modeloEevee.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = modeloEevee.scn; sourceTree = "<group>"; };
@@ -77,6 +104,14 @@
 		45C9AEA5225F377400A94BFE /* VideoARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoARViewController.swift; sourceTree = "<group>"; };
 		45C9AEAB225F437A00A94BFE /* SpinnerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
 		493C746D2243664300B499F3 /* SalonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonCell.swift; sourceTree = "<group>"; };
+		4959F0C5227A88DA00320E8A /* NuevoEquipoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevoEquipoViewController.swift; sourceTree = "<group>"; };
+		4959F0C8227A91CC00320E8A /* NuevoEquipoIntegranteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevoEquipoIntegranteTableViewCell.swift; sourceTree = "<group>"; };
+		4959F0CD227ABD3C00320E8A /* AsignarTareaIntegrantesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsignarTareaIntegrantesTableViewController.swift; sourceTree = "<group>"; };
+		4959F0CF227ABDDA00320E8A /* AsignarTareaIntegranteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsignarTareaIntegranteTableViewCell.swift; sourceTree = "<group>"; };
+		763593E122793C6400D4BC87 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		9BCB39097ADBDBDA618072E6 /* Pods-OIL_APP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OIL_APP.release.xcconfig"; path = "Target Support Files/Pods-OIL_APP/Pods-OIL_APP.release.xcconfig"; sourceTree = "<group>"; };
+		C8D9649864D713B294384787 /* Pods_OIL_APP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OIL_APP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB324E9169252704C0329F94 /* Pods-OIL_APP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OIL_APP.debug.xcconfig"; path = "Target Support Files/Pods-OIL_APP/Pods-OIL_APP.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				456A5909325519F6F9FC1DED /* Pods_OIL_APP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +129,7 @@
 		060D596B2241CDC20013DC27 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				3AFB3556227A5C0A00A5B1F1 /* UIKeyboard.swift */,
 				060D59692241CD990013DC27 /* UIImageView.swift */,
 				060D59722241FAC50013DC27 /* UIButton.swift */,
 				060D597F224219010013DC27 /* UIColor.swift */,
@@ -122,11 +159,23 @@
 			path = DetalleViewControllers;
 			sourceTree = "<group>";
 		};
+		39C676A3227795BF001FA558 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				39C676A422779669001FA558 /* RegistrarUsuarioViewController.swift */,
+				393CD6B62277D58D00501C82 /* IniciarSesionViewController.swift */,
+				763593E122793C6400D4BC87 /* SettingsViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		3A49AC192224936C00302E54 = {
 			isa = PBXGroup;
 			children = (
 				3A49AC242224936C00302E54 /* OIL_APP */,
 				3A49AC232224936C00302E54 /* Products */,
+				AA700963FD10442477B53A1B /* Pods */,
+				D7EDC70872E1016BE665E6D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,22 +190,33 @@
 		3A49AC242224936C00302E54 /* OIL_APP */ = {
 			isa = PBXGroup;
 			children = (
+				3AB463CF227B877F0092E44A /* OIL_APP.entitlements */,
+				3AA09CA7227AFB9D00FE7565 /* art.scnassets */,
+				4959F0CC227ABCEB00320E8A /* TableViewControllers */,
+				4959F0C7227A91A100320E8A /* CellControllers */,
+				4959F0C4227A88B000320E8A /* FormulariosControllers */,
+				39C676A3227795BF001FA558 /* Auth */,
+				390D037622778E1700AC2C6F /* GoogleService-Info.plist */,
 				45C9AEAA225F435F00A94BFE /* Utils */,
 				395C26E9225E8C2B0084549E /* DetalleViewControllers */,
 				060D5978224209BF0013DC27 /* MiEquipo */,
 				060D596B2241CDC20013DC27 /* Extensions */,
 				060D59702241E01C0013DC27 /* MisEquiposViewController.swift */,
+				393CD6B42277D39F00501C82 /* PantallaDeInicioViewController.swift */,
 				3A529855223F77D40076CF0A /* ListaMaterialTableViewController.swift */,
 				45C9AEA2225F2EAA00A94BFE /* imagenJSONViewController.swift */,
 				3A49AC252224936C00302E54 /* AppDelegate.swift */,
 				3ADCF99A225EDA7700D6B628 /* earth-sumner.jpg */,
 				3AC2954C223F1A0000181F57 /* AgendarReunionViewController.swift */,
 				3AD68871225EC831008C5E18 /* KeyboardUIController.swift */,
+				3AFB3559227A5C3600A5B1F1 /* BotonCollectionViewCell.swift */,
+				3AFB3558227A5C3600A5B1F1 /* NuevaTareaViewController.swift */,
 				060D596C2241CE7C0013DC27 /* EquipoCell.swift */,
 				3A49AC3B2224969300302E54 /* OrangeRoundedButton.swift */,
 				3AD6886D225EC40D008C5E18 /* ARViewController.swift */,
 				45C9AEA0225F2AF600A94BFE /* ARNavigationViewController.swift */,
 				3A59D1972242D320004118DF /* Main.storyboard */,
+				3AA09CA5227AF70400FE7565 /* objetoMarcadorViewController.swift */,
 				45C9AEA4225F377300A94BFE /* Video3DViewController.swift */,
 				45C9AEA5225F377400A94BFE /* VideoARViewController.swift */,
 				493C746D2243664300B499F3 /* SalonCell.swift */,
@@ -176,8 +236,51 @@
 			isa = PBXGroup;
 			children = (
 				45C9AEAB225F437A00A94BFE /* SpinnerViewController.swift */,
+				39E901B5228368520039924D /* Helper.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		4959F0C4227A88B000320E8A /* FormulariosControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4959F0C5227A88DA00320E8A /* NuevoEquipoViewController.swift */,
+			);
+			path = FormulariosControllers;
+			sourceTree = "<group>";
+		};
+		4959F0C7227A91A100320E8A /* CellControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4959F0C8227A91CC00320E8A /* NuevoEquipoIntegranteTableViewCell.swift */,
+				4959F0CF227ABDDA00320E8A /* AsignarTareaIntegranteTableViewCell.swift */,
+			);
+			path = CellControllers;
+			sourceTree = "<group>";
+		};
+		4959F0CC227ABCEB00320E8A /* TableViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4959F0CD227ABD3C00320E8A /* AsignarTareaIntegrantesTableViewController.swift */,
+			);
+			path = TableViewControllers;
+			sourceTree = "<group>";
+		};
+		AA700963FD10442477B53A1B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB324E9169252704C0329F94 /* Pods-OIL_APP.debug.xcconfig */,
+				9BCB39097ADBDBDA618072E6 /* Pods-OIL_APP.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D7EDC70872E1016BE665E6D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8D9649864D713B294384787 /* Pods_OIL_APP.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,9 +290,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A49AC362224936E00302E54 /* Build configuration list for PBXNativeTarget "OIL_APP" */;
 			buildPhases = (
+				CFF2D8CA3CA42607E1C160A4 /* [CP] Check Pods Manifest.lock */,
 				3A49AC1E2224936C00302E54 /* Sources */,
 				3A49AC1F2224936C00302E54 /* Frameworks */,
 				3A49AC202224936C00302E54 /* Resources */,
+				FE345BEFEAFCDDA19FC9DA90 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,6 +318,11 @@
 					3A49AC212224936C00302E54 = {
 						CreatedOnToolsVersion = 10.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -240,7 +350,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A49AC322224936E00302E54 /* LaunchScreen.storyboard in Resources */,
+				3AA09CA8227AFB9D00FE7565 /* art.scnassets in Resources */,
 				3A529854223F719D0076CF0A /* Assets.xcassets in Resources */,
+				390D037722778E1700AC2C6F /* GoogleService-Info.plist in Resources */,
 				3ADCF99B225EDA7800D6B628 /* earth-sumner.jpg in Resources */,
 				3A59D1982242D320004118DF /* Main.storyboard in Resources */,
 			);
@@ -248,17 +360,86 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CFF2D8CA3CA42607E1C160A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OIL_APP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE345BEFEAFCDDA19FC9DA90 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OIL_APP/Pods-OIL_APP-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OIL_APP/Pods-OIL_APP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3A49AC1E2224936C00302E54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				393CD6B52277D39F00501C82 /* PantallaDeInicioViewController.swift in Sources */,
+				393CD6B72277D58D00501C82 /* IniciarSesionViewController.swift in Sources */,
+				4959F0D0227ABDDA00320E8A /* AsignarTareaIntegranteTableViewCell.swift in Sources */,
+				763593E222793C6400D4BC87 /* SettingsViewController.swift in Sources */,
 				060D5980224219010013DC27 /* UIColor.swift in Sources */,
+				39C676A522779669001FA558 /* RegistrarUsuarioViewController.swift in Sources */,
+				4959F0C9227A91CC00320E8A /* NuevoEquipoIntegranteTableViewCell.swift in Sources */,
 				060D5975224206D10013DC27 /* MiEquipoTabBarController.swift in Sources */,
+				4959F0CE227ABD3C00320E8A /* AsignarTareaIntegrantesTableViewController.swift in Sources */,
 				060D5977224209920013DC27 /* MisTareasViewController.swift in Sources */,
 				45C9AEA7225F377400A94BFE /* VideoARViewController.swift in Sources */,
 				3A529856223F77D40076CF0A /* ListaMaterialTableViewController.swift in Sources */,
 				3AD68872225EC831008C5E18 /* KeyboardUIController.swift in Sources */,
+				3AFB3557227A5C0B00A5B1F1 /* UIKeyboard.swift in Sources */,
 				450A7212225F10B500B1312A /* SalonSearchCell.swift in Sources */,
 				060D597A22420A0C0013DC27 /* TareasPendientesViewController.swift in Sources */,
 				45269AC3225F7102001F6701 /* ObjectViewController.swift in Sources */,
@@ -273,12 +454,17 @@
 				450A7210225F06BD00B1312A /* MultimediaViewController.swift in Sources */,
 				3A49AC3C2224969300302E54 /* OrangeRoundedButton.swift in Sources */,
 				3A49AC3C2224969300302E54 /* OrangeRoundedButton.swift in Sources */,
+				3AFB355A227A5C3600A5B1F1 /* NuevaTareaViewController.swift in Sources */,
+				39E901B6228368520039924D /* Helper.swift in Sources */,
 				060D597E224218600013DC27 /* TareaCell.swift in Sources */,
 				45C9AEA1225F2AF600A94BFE /* ARNavigationViewController.swift in Sources */,
 				395C26ED225E8C7D0084549E /* DetalleTareaViewController.swift in Sources */,
+				3AFB355B227A5C3600A5B1F1 /* BotonCollectionViewCell.swift in Sources */,
+				4959F0C6227A88DA00320E8A /* NuevoEquipoViewController.swift in Sources */,
 				45C9AEA3225F2EAA00A94BFE /* imagenJSONViewController.swift in Sources */,
 				3A49AC262224936C00302E54 /* AppDelegate.swift in Sources */,
 				3AC2954D223F1A0000181F57 /* AgendarReunionViewController.swift in Sources */,
+				3AA09CA6227AF70400FE7565 /* objetoMarcadorViewController.swift in Sources */,
 				060D596D2241CE7C0013DC27 /* EquipoCell.swift in Sources */,
 				3AD6886E225EC40D008C5E18 /* ARViewController.swift in Sources */,
 				45C9AEA6225F377400A94BFE /* Video3DViewController.swift in Sources */,
@@ -416,15 +602,18 @@
 		};
 		3A49AC372224936E00302E54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB324E9169252704C0329F94 /* Pods-OIL_APP.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = OIL_APP/OIL_APP.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z7T452MF6T;
+				DEVELOPMENT_TEAM = WS56L8DHRF;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = OIL_APP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Equipo2.1.OIL-APP";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oilApp.T21;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -433,15 +622,18 @@
 		};
 		3A49AC382224936E00302E54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BCB39097ADBDBDA618072E6 /* Pods-OIL_APP.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = OIL_APP/OIL_APP.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z7T452MF6T;
+				DEVELOPMENT_TEAM = WS56L8DHRF;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = OIL_APP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Equipo2.1.OIL-APP";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oilApp.T21;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

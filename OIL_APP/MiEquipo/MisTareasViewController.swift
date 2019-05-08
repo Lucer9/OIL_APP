@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseFirestore
 
 extension MisTareasViewController: UISearchResultsUpdating {
     // MARK: - UISearchResultsUpdating Delegate
@@ -15,18 +16,16 @@ extension MisTareasViewController: UISearchResultsUpdating {
     }
 }
 
+
 class MisTareasViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+
     @IBOutlet weak var nombreLabel: UILabel!
     @IBOutlet weak var listaTareas: UITableView!
     
-    let urlString="https://raw.githubusercontent.com/Lucer9/OIL_APP/master/jsonFiles/tareas.json"
-    
-    var idEquipo: String = "1"
-    var datosArray:[Any]?
-    var datosFiltrados = [Any]()
-    var usuariosArray:[Any]?
-    var usuariosFiltrados = [Any]()
+    var idEquipo: String = ""
+    var id: String = ""
+    var datosArray = [[String: Any]]()
+    var datosFiltrados = [[String: Any]]()
     
     let searchController: UISearchController = UISearchController(searchResultsController: nil)
     
@@ -39,7 +38,7 @@ class MisTareasViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func filterContentForSearchText(_ searchText: String, scope: String = "All") {
-        datosFiltrados = datosArray!.filter{
+        datosFiltrados = datosArray.filter{
             let tarea=$0 as! [String:Any]
             let s:String = tarea["titulo"] as! String;
             return(s.lowercased().contains(searchController.searchBar.text!.lowercased())) }
@@ -48,78 +47,125 @@ class MisTareasViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     override func viewDidLoad() {
-        let child = SpinnerViewController()
-        addChild(child)
-        child.view.frame = view.frame
-        view.addSubview(child.view)
-        child.didMove(toParent: self)
+        super.viewDidLoad()
+
+        let controller = self.tabBarController as! MiEquipoTabBarController
+        self.nombreLabel.text = controller.nombreEquipo
+        self.idEquipo = controller.idEquipo
+        self.id = controller.id
         
         DispatchQueue.main.asyncAfter(deadline: .now()) {
-            super.viewDidLoad()
+            let child = SpinnerViewController()
+            self.addChild(child)
+            child.view.frame = self.view.frame
+            self.view.addSubview(child.view)
+            child.didMove(toParent: self)
             
-            let controller = self.tabBarController as! MiEquipoTabBarController
-            self.nombreLabel.text = controller.nombreEquipo
-            
-            self.listaTareas.separatorStyle = UITableViewCell.SeparatorStyle.none
-            self.listaTareas.delegate = self
-            self.listaTareas.dataSource = self
-            
-            self.idEquipo = controller.idEquipo
-            
-            var url = URL(string: self.urlString)
-            var datos = try? Data(contentsOf: url!)
-            self.datosArray = try! JSONSerialization.jsonObject(with: datos!) as? [Any]
-            self.datosArray = self.datosArray!.filter {
-                let tarea=$0 as! [String:Any]
-                let s:String = tarea["equipo"] as! String
-                
-                if(tarea["reunion"] as? Bool ?? false){
-                    return s == self.idEquipo
+            Firestore.firestore().collection("tareas").whereField("equipo", isEqualTo: self.idEquipo).whereField("asignadoA", isEqualTo: self.id).getDocuments() { (querySnapshot, err) in
+                if let err = err {
+                    self.listaTareas.separatorStyle = UITableViewCell.SeparatorStyle.none
+                    self.listaTareas.delegate = self
+                    self.listaTareas.dataSource = self
+                    self.searchController.searchResultsUpdater = self
+                    self.searchController.obscuresBackgroundDuringPresentation = false
+                    self.searchController.searchBar.placeholder = "Buscar tareas"
+                    self.searchController.searchBar.setValue("Cancelar", forKey: "cancelButtonText")
+                    self.searchController.searchBar.barTintColor = .white
+                    self.navigationItem.searchController = self.searchController
+                    self.definesPresentationContext = true
+                    self.listaTareas.tableHeaderView = self.searchController.searchBar
+                    child.willMove(toParent: nil)
+                    child.view.removeFromSuperview()
+                    child.removeFromParent()
+                    let alert = UIAlertController(title: "Ocurrió un error obteniendo las tareas", message: err.localizedDescription, preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "De acuerdo", style: .default, handler: nil))
+                    self.present(alert, animated: true)
+                    return
+                } else {
+                    if(querySnapshot!.documents.count==0){
+                        self.listaTareas.separatorStyle = UITableViewCell.SeparatorStyle.none
+                        self.listaTareas.delegate = self
+                        self.listaTareas.dataSource = self
+                        self.searchController.searchResultsUpdater = self
+                        self.searchController.obscuresBackgroundDuringPresentation = false
+                        self.searchController.searchBar.placeholder = "Buscar tareas"
+                        self.searchController.searchBar.setValue("Cancelar", forKey: "cancelButtonText")
+                        self.searchController.searchBar.barTintColor = .white
+                        self.navigationItem.searchController = self.searchController
+                        self.definesPresentationContext = true
+                        self.listaTareas.tableHeaderView = self.searchController.searchBar
+                        child.willMove(toParent: nil)
+                        child.view.removeFromSuperview()
+                        child.removeFromParent()
+                        return
+                    }
+                    for document in querySnapshot!.documents {
+                        let tarea = document.data()
+                        let idTarea = document.documentID
+                        let idAsignadoA:String = tarea["asignadoA"]! as! String
+                        
+                        Firestore.firestore().collection("users").whereField("id", isEqualTo: idAsignadoA).getDocuments() { (querySnapshot, err) in
+                            
+                            if let err = err{
+                                self.listaTareas.separatorStyle = UITableViewCell.SeparatorStyle.none
+                                self.listaTareas.delegate = self
+                                self.listaTareas.dataSource = self
+                                self.searchController.searchResultsUpdater = self
+                                self.searchController.obscuresBackgroundDuringPresentation = false
+                                self.searchController.searchBar.placeholder = "Buscar tareas"
+                                self.searchController.searchBar.setValue("Cancelar", forKey: "cancelButtonText")
+                                self.searchController.searchBar.barTintColor = .white
+                                self.navigationItem.searchController = self.searchController
+                                self.definesPresentationContext = true
+                                self.listaTareas.tableHeaderView = self.searchController.searchBar
+                                child.willMove(toParent: nil)
+                                child.view.removeFromSuperview()
+                                child.removeFromParent()
+                                let alert = UIAlertController(title: "Ocurrió un error obteniendo las tareas", message: err.localizedDescription, preferredStyle: .alert)
+                                alert.addAction(UIAlertAction(title: "De acuerdo", style: .default, handler: nil))
+                                self.present(alert, animated: true)
+                                return
+                            }else{
+                                for document in querySnapshot!.documents{
+                                    let asignadoA = document.data()
+                                    let timestamp = tarea["fecha"] as! Timestamp
+                                    let date = Date(timeIntervalSince1970: TimeInterval(timestamp.seconds))
+                                    
+                                    let tareaAInsertar = [
+                                        "id": idTarea,
+                                        "color": tarea["color"]! as! String,
+                                        "descripcion": tarea["descripcion"]! as! String,
+                                        "equipo": tarea["equipo"]! as! String,
+                                        "fecha": date as! Date,
+                                        "reunion": false,
+                                        "realizada": tarea["realizada"]! as! Bool,
+                                        "titulo": tarea["titulo"]! as! String,
+                                        "asignadoA": asignadoA
+                                        ] as [String : Any]
+                                    
+                                    self.datosArray.append(tareaAInsertar as [String : Any])
+                                }
+                                
+                                self.listaTareas.separatorStyle = UITableViewCell.SeparatorStyle.none
+                                self.listaTareas.delegate = self
+                                self.listaTareas.dataSource = self
+                                self.searchController.searchResultsUpdater = self
+                                self.searchController.obscuresBackgroundDuringPresentation = false
+                                self.searchController.searchBar.placeholder = "Buscar tareas"
+                                self.searchController.searchBar.setValue("Cancelar", forKey: "cancelButtonText")
+                                self.searchController.searchBar.barTintColor = .white
+                                self.definesPresentationContext = true
+                                self.listaTareas.tableHeaderView = self.searchController.searchBar
+                                self.listaTareas.reloadData()
+                                child.willMove(toParent: nil)
+                                child.view.removeFromSuperview()
+                                child.removeFromParent()
+                                return
+                            }
+                        }
+                    }
                 }
-                
-                let asignadoA:String = tarea["asignadoA"] as! String
-                return s == self.idEquipo && asignadoA == "l01556728"
             }
-            
-            let integrantesUrlString="https://raw.githubusercontent.com/Lucer9/OIL_APP/vistas_carlos/jsonFiles/integrantes.json"
-            url = URL(string: integrantesUrlString)
-            datos = try? Data(contentsOf: url!)
-            self.usuariosArray = try! JSONSerialization.jsonObject(with: datos!) as? [Any]
-            
-            self.datosArray = self.datosArray!.map{
-                
-                var dato = $0 as! [String:Any]
-                
-                if(dato["reunion"] as? Bool ?? false){
-                    return dato;
-                }
-                let idAsignadoA = dato["asignadoA"] as? String
-                
-                self.usuariosFiltrados = self.usuariosArray!.filter {
-                    let usuario=$0 as! [String:Any]
-                    let s:String = usuario["id"] as! String;
-                    return s == idAsignadoA
-                }
-                
-                let asignadoA = self.usuariosFiltrados[0] as! [String : Any]
-                dato["asignadoA"] = asignadoA
-                
-                return dato
-            }
-            
-            self.searchController.searchResultsUpdater = self
-            self.searchController.obscuresBackgroundDuringPresentation = false
-            self.searchController.searchBar.placeholder = "Buscar tareas"
-            self.searchController.searchBar.setValue("Cancelar", forKey: "cancelButtonText")
-            self.searchController.searchBar.barTintColor = .white
-            self.navigationItem.searchController = self.searchController
-            self.definesPresentationContext = true
-            
-            self.listaTareas.tableHeaderView = self.searchController.searchBar
-            
-            child.willMove(toParent: nil)
-            child.view.removeFromSuperview()
-            child.removeFromParent()
         }
     }
     
@@ -127,7 +173,7 @@ class MisTareasViewController: UIViewController, UITableViewDelegate, UITableVie
         if isFiltering() {
             return datosFiltrados.count
         }
-        return (datosArray?.count)!
+        return (datosArray.count)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -152,8 +198,9 @@ class MisTareasViewController: UIViewController, UITableViewDelegate, UITableVie
         if isFiltering() {
             cellData = datosFiltrados[indexPath.section] as! [String: Any]
         } else {
-            cellData = datosArray?[indexPath.section] as! [String: Any]
+            cellData = datosArray[indexPath.section] as! [String: Any]
         }
+        
         var titulo = cellData["titulo"] as? String
         if(cellData["reunion"] as? Bool ?? false){
             //Aqui falta hacer que se carge la imagen del equipo
@@ -166,8 +213,11 @@ class MisTareasViewController: UIViewController, UITableViewDelegate, UITableVie
         cell.imagen.roundedImage()
         cell.cellButton.roundCorners()
         let hexColor = cellData["color"] as? String
-        cell.cellButton.backgroundColor =  UIColor(hexString: hexColor!)
+        cell.cellButton.backgroundColor =  UIColor(hexString: "\(hexColor!)1A")
+        cell.cellButton.layer.borderWidth = 1
+        cell.cellButton.layer.borderColor = UIColor(hexString: "\(hexColor!)FF")?.cgColor
         cell.tituloLabel.text = titulo
+        cell.tiempoLabel.text = Helper.timeAgoStringFromDate(date: cellData["fecha"] as! Date)
         
         return cell
     }
@@ -177,7 +227,7 @@ class MisTareasViewController: UIViewController, UITableViewDelegate, UITableVie
         if isFiltering() {
             cellData = datosFiltrados[indexPath.section] as! [String: Any]
         } else {
-            cellData = datosArray?[indexPath.section] as! [String: Any]
+            cellData = datosArray[indexPath.section] as! [String: Any]
         }
         
         if(cellData["reunion"] as? Bool ?? false){
@@ -195,21 +245,30 @@ class MisTareasViewController: UIViewController, UITableViewDelegate, UITableVie
             if isFiltering() {
                 cellData = datosFiltrados[section] as! [String: Any]
             } else {
-                cellData = datosArray?[section] as! [String: Any]
+                cellData = datosArray[section] as! [String: Any]
             }
-            
             controller.tarea = cellData
-        }else if(segue.identifier=="DetalleReunion"){
+            //controller.tiempo.text = timeAgoStringFromDate(date: cellData["fecha"] as? Date ?? Date())
+        }
+        
+        if(segue.identifier=="DetalleReunion"){
             let controller = segue.destination as! DetalleReunionViewController
             let section = (sender as! NSIndexPath).section;
             var cellData: [String: Any]
             if isFiltering() {
                 cellData = datosFiltrados[section] as! [String: Any]
-            } else {
-                cellData = datosArray?[section] as! [String: Any]
             }
-            
-            controller.reunion = cellData
         }
+        
+        if(segue.identifier=="nuevaTarea") {
+            let controller = segue.destination as! NuevaTareaViewController
+            controller.equipo = nombreLabel.text!
+            controller.idEquipo = self.idEquipo
+        }
+        
     }
+        @IBAction func nuevaTareaBoton(_ sender: UIBarButtonItem) {
+            self.performSegue(withIdentifier: "nuevaTarea", sender: self)
+        }
+    
 }

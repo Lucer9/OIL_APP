@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseStorage
+import FirebaseFirestore
 
 extension MisEquiposViewController: EquipoCellDelegate{
     func didTapAgendarReunion(idEquipo: String, nombreEquipo: String) {
@@ -18,6 +21,7 @@ extension MisEquiposViewController: EquipoCellDelegate{
         present(siguienteVista, animated: true, completion: nil)
     }
 }
+
 extension MisEquiposViewController: UISearchResultsUpdating {
     // MARK: - UISearchResultsUpdating Delegate
     func updateSearchResults(for searchController: UISearchController) {
@@ -27,11 +31,18 @@ extension MisEquiposViewController: UISearchResultsUpdating {
 
 class MisEquiposViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
+    @IBAction func CerrarSesion(_ sender: Any) {
+        do {
+            try Auth.auth().signOut()
+            self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+    }
     
-    let urlString="https://raw.githubusercontent.com/Lucer9/OIL_APP/master/jsonFiles/equipos.json"
-    
-    var datosArray:[Any]?
-    var datosFiltrados = [Any]()
+    var id:String = ""
+    var datosArray = [[String:Any]]()
+    var datosFiltrados = [[String:Any]]()
     let searchController: UISearchController = UISearchController(searchResultsController: nil)
     
     func isFiltering() -> Bool {
@@ -43,7 +54,7 @@ class MisEquiposViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     func filterContentForSearchText(_ searchText: String, scope: String = "All") {
-        datosFiltrados = datosArray!.filter{
+        datosFiltrados = datosArray.filter{
             let equipo=$0 as! [String:Any]
             let s:String = equipo["nombreEquipo"] as! String;
             return(s.lowercased().contains(searchController.searchBar.text!.lowercased())) }
@@ -52,21 +63,55 @@ class MisEquiposViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     override func viewDidLoad() {
-        let child = SpinnerViewController()
-        addChild(child)
-        child.view.frame = view.frame
-        view.addSubview(child.view)
-        child.didMove(toParent: self)
+        super.viewDidLoad()
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
         
         DispatchQueue.main.asyncAfter(deadline: .now()) {
-            super.viewDidLoad()
             
-            self.tableView.delegate = self
-            self.tableView.dataSource = self
+            let child = SpinnerViewController()
+            self.addChild(child)
+            child.view.frame = self.view.frame
+            self.view.addSubview(child.view)
+            child.didMove(toParent: self)
             
-            let url = URL(string: self.urlString)
-            let datos = try? Data(contentsOf: url!)
-            self.datosArray = try! JSONSerialization.jsonObject(with: datos!) as? [Any]
+            
+            let uid = Auth.auth().currentUser!.uid
+            let userRef = Firestore.firestore().collection("users").document(uid)
+            
+            userRef.getDocument { (document, error) in
+                if let document = document, document.exists {
+                    self.id = document.data()!["id"] as! String
+                    
+                    Firestore.firestore().collection("equipos").whereField("integrantes", arrayContains: self.id).getDocuments() { (querySnapshot, err) in
+                        if let err = err {
+                            print("Error getting documents: \(err)")
+                        } else {
+                            for document in querySnapshot!.documents {
+                                let equipo = document.data()
+                                let equipoAInsertar = [
+                                    "idEquipo": document.documentID,
+                                    "nombreEquipo": equipo["nombre"],
+                                    "imagen": equipo["imagen"],
+                                    "integrantes": equipo["integrantes"],
+                                    "numTareasPendientes": 2
+                                ]
+                                
+                                self.datosArray.append(equipoAInsertar as [String : Any])
+                            }
+                            
+                            self.tableView.reloadData()
+                            child.willMove(toParent: nil)
+                            child.view.removeFromSuperview()
+                            child.removeFromParent()
+                        }
+                    }
+                }else{
+                    child.willMove(toParent: nil)
+                    child.view.removeFromSuperview()
+                    child.removeFromParent()
+                }
+            }
             
             self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
             
@@ -78,10 +123,6 @@ class MisEquiposViewController: UIViewController, UITableViewDelegate, UITableVi
             self.navigationItem.searchController = self.searchController
             self.definesPresentationContext = true
             self.tableView.tableHeaderView = self.searchController.searchBar
-            
-            child.willMove(toParent: nil)
-            child.view.removeFromSuperview()
-            child.removeFromParent()
         }
     }
     
@@ -91,7 +132,7 @@ class MisEquiposViewController: UIViewController, UITableViewDelegate, UITableVi
         if isFiltering() {
             return datosFiltrados.count
         }
-        return (datosArray?.count)!
+        return (datosArray.count)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -116,7 +157,7 @@ class MisEquiposViewController: UIViewController, UITableViewDelegate, UITableVi
         if isFiltering() {
             cellData = datosFiltrados[indexPath.section] as! [String: Any]
         } else {
-            cellData = datosArray?[indexPath.section] as! [String: Any]
+            cellData = datosArray[indexPath.section] as! [String: Any]
         }
         
         let cellImageURLString = cellData["imagen"] as! String
@@ -137,9 +178,13 @@ class MisEquiposViewController: UIViewController, UITableViewDelegate, UITableVi
         cell.button.roundCorners()
         
         cell.nombreLabel.text = cellData["nombreEquipo"] as? String
+        
+        //Pendiente
+        /*
         let cellNumTareasPendientes = (cellData["numTareasPendientes"] as! Int)
         let cellNumTareasPendientesText = "\(cellNumTareasPendientes) tareas pendientes"
-        cell.tareasLabel.text =     cellNumTareasPendientesText
+        cell.tareasLabel.text = cellNumTareasPendientesText
+        */
         
         cell.delegate = self
         return cell
@@ -152,52 +197,16 @@ class MisEquiposViewController: UIViewController, UITableViewDelegate, UITableVi
         if (isFiltering()){
             equipo = datosFiltrados[indexPath.section] as! [String: Any]
         }else{
-            equipo = datosArray![indexPath.section] as! [String: Any]
+            equipo = datosArray[indexPath.section] as! [String: Any]
         }
         
         let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "miEquipo") as! MiEquipoTabBarController
         
         siguienteVista.idEquipo = equipo["idEquipo"] as! String
         siguienteVista.nombreEquipo = equipo["nombreEquipo"] as! String
+        siguienteVista.id = self.id
         
         self.present(siguienteVista, animated: true, completion: nil)
         
     }
-    
-    /*
-     // Override to support conditional editing of the table view.
-     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-     // Return false if you do not want the specified item to be editable.
-     return true
-     }
-     */
-    
-    /*
-     // Override to support editing the table view.
-     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-     if editingStyle == .delete {
-     // Delete the row from the data source
-     tableView.deleteRows(at: [indexPath], with: .fade)
-     } else if editingStyle == .insert {
-     // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-     }
-     }
-     */
-    
-    /*
-     // Override to support rearranging the table view.
-     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-     
-     }
-     */
-    
-    /*
-     // Override to support conditional rearranging of the table view.
-     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-     // Return false if you do not want the item to be re-orderable.
-     return true
-     }
-     */
-    
-    
 }

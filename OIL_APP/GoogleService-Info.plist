@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>808953305905-6f2jl4ta203o2hba74v8j4n1l801n32d.apps.googleusercontent.com</string>
+	<string>808953305905-tvaljd8e9q4cbdqt8m0p6225iass2a05.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.808953305905-6f2jl4ta203o2hba74v8j4n1l801n32d</string>
+	<string>com.googleusercontent.apps.808953305905-tvaljd8e9q4cbdqt8m0p6225iass2a05</string>
 	<key>API_KEY</key>
 	<string>AIzaSyDBVkEdUJ9baPbrOBdo5fVYqRY9VqaPSB0</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>Equipo2.1.OIL-APP</string>
+	<string>com.oilApp.T21</string>
 	<key>PROJECT_ID</key>
 	<string>open-innovation-lab</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,7 +29,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:808953305905:ios:3c0536c84daecb90</string>
+	<string>1:808953305905:ios:8904d161125a0a8d</string>
 	<key>DATABASE_URL</key>
 	<string>https://open-innovation-lab.firebaseio.com</string>
 </dict>

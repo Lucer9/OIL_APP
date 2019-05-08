@@ -6,6 +6,7 @@
 //  Copyright © 2019 JAMO-JMGT-CAO. All rights reserved.
 //
 import UIKit
+import FirebaseFirestore
 
 class DetalleTareaViewController: UIViewController {
     
@@ -28,6 +29,42 @@ class DetalleTareaViewController: UIViewController {
         imagen.roundedImage()
     }
     
+    @IBAction func TareaRealizada(_ sender: Any) {
+        let id = tarea["id"] as! String
+
+        DispatchQueue.main.asyncAfter(deadline: .now()) {
+            
+            let child = SpinnerViewController()
+            self.addChild(child)
+            child.view.frame = self.view.frame
+            self.view.addSubview(child.view)
+            child.didMove(toParent: self)
+            
+            let db = Firestore.firestore()
+            db.collection("tareas").document(id).setData(["realizada": true], merge: true) { err in
+                if let err = err {
+                    child.willMove(toParent: nil)
+                    child.view.removeFromSuperview()
+                    child.removeFromParent()
+                    let alert = UIAlertController(title: "Ocurrió un error", message: "", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "De acuerdo", style: .default, handler: nil))
+                    self.present(alert, animated: true)
+                } else {
+                    child.willMove(toParent: nil)
+                    child.view.removeFromSuperview()
+                    child.removeFromParent()
+                    
+                    let alert = UIAlertController(title: "Se marcó la tarea \(self.tarea["titulo"]!) como realizada", message: "", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Gracias", style: .default, handler: self.showPrevious))
+                    self.present(alert, animated: true)
+                }
+            }
+        }
+    }
+    
+    func showPrevious(action:UIAlertAction){
+        _ = navigationController?.popViewController(animated: true)
+    }
     
     /*
      // MARK: - Navigation

@@ -23,7 +23,7 @@ class ListaMaterialTableViewController: UITableViewController {
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 13
+        return 14
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -41,6 +41,7 @@ class ListaMaterialTableViewController: UITableViewController {
         case 10: return "Video AR"
         case 11: return "Video 360"
         case 12: return "Objeto 3D"
+        case 13: return "Marcador 3D"
         default: return nil
         }
     }
@@ -66,6 +67,7 @@ class ListaMaterialTableViewController: UITableViewController {
         case 10: return (numVideos)
         case 11: return (numVideos360)
         case 12: return 1
+        case 13: return 1
         default: return 0
         }
     }
@@ -86,13 +88,15 @@ class ListaMaterialTableViewController: UITableViewController {
         case 3: cell.label.text = (salonSeleccionado["equipamiento"] as! [String])[indexPath.row]
         case 4: cell.label.text = salonSeleccionado["correoResponsable"] as? String
         case 5: cell.label.text = salonSeleccionado["descripcion"] as? String
-        case 6: cell.label.text = (salonSeleccionado["imagen"] as! [String])[indexPath.row]
-        case 7: cell.label.text = (salonSeleccionado["imagen"] as! [String])[indexPath.row] //realidad aumentada
-        case 8: cell.label.text = salonSeleccionado["panoramica"] as? String
-        case 9: cell.label.text = (salonSeleccionado["video"] as! [String])[indexPath.row]
-        case 10: cell.label.text = (salonSeleccionado["video"] as! [String])[indexPath.row]
-        case 11: cell.label.text = (salonSeleccionado["video360"] as! [String])[indexPath.row]
-        case 12: cell.label.text = (((salonSeleccionado["objeto3D"] as! [Any])[indexPath.row]) as! [String:Any])["objeto"] as! String
+        case 6: cell.label.text = "Foto de prueba"
+        case 7: cell.label.text = "Foto de prueba (AR)"
+        case 8: cell.label.text = "Imagen Panoramica del salón: \(salonSeleccionado["nombre"] ?? "nil")"
+        case 9: cell.label.text = "Video de Lego"
+        case 10: cell.label.text = "Video de Lego (AR)"
+        case 11: cell.label.text = "Video de un puente (360)"
+        case 12: cell.label.text = "Eevee"
+        case 13: cell.label.text = "Laptop sobre marcador"
+            
         default: 0
         }
         
@@ -122,6 +126,9 @@ class ListaMaterialTableViewController: UITableViewController {
         }
         if indexPath.section == 12{
             performSegue(withIdentifier: "objectViewer", sender: indexPath)
+        }
+        if indexPath.section == 13{
+            performSegue(withIdentifier: "marcadorSegue", sender: indexPath)
         }
     }
     
@@ -161,6 +168,13 @@ class ListaMaterialTableViewController: UITableViewController {
             
             controller.escenaPath = (((salonSeleccionado["objeto3D"] as! [Any])[row]) as! [String:Any])["objeto"] as! String
             controller.texturasPath = ((((salonSeleccionado["objeto3D"] as! [Any])[row]) as! [String:Any])["texturas"] as! [String])[1] as! String
+        }
+        if(segue.identifier=="marcadorSegue"){
+            let controller = segue.destination as! objetoMarcadirViewController
+            let row = (sender as! NSIndexPath).row
+            
+            controller.escenaPath = salonSeleccionado["marcador3D"] as? String ?? "hi"
+          
         }
     }
     

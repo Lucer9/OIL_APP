@@ -12,6 +12,7 @@ class MiEquipoTabBarController: UITabBarController {
     
     var nombreEquipo: String = "Nombre del equipo"
     var idEquipo: String = "Id del equipo"
+    var id: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
